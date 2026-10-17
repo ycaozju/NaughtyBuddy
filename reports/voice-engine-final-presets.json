@@ -1,0 +1,110 @@
+{
+  "engine": "kokoro",
+  "threads": 2,
+  "text": "身体的问题可以问。你的身体属于你，如果有人让你不舒服，请告诉安全、可信任的大人。",
+  "text_chars": 40,
+  "cold_load_ms": 1067.1108270180412,
+  "prior_rejected_preset": {
+    "speaker_id": 74,
+    "report": "voice-engine-preparation.json"
+  },
+  "samples": [
+    {
+      "speaker_id": 3,
+      "trial": 0,
+      "generation_ms": 5688.711810973473,
+      "audio_seconds": 8.9895,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-3-0.wav"
+    },
+    {
+      "speaker_id": 3,
+      "trial": 1,
+      "generation_ms": 5480.023573967628,
+      "audio_seconds": 8.983916666666667,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-3-1.wav"
+    },
+    {
+      "speaker_id": 3,
+      "trial": 2,
+      "generation_ms": 5508.152374008205,
+      "audio_seconds": 8.996625,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-3-2.wav"
+    },
+    {
+      "speaker_id": 20,
+      "trial": 0,
+      "generation_ms": 6362.947212997824,
+      "audio_seconds": 10.53525,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-20-0.wav"
+    },
+    {
+      "speaker_id": 20,
+      "trial": 1,
+      "generation_ms": 6323.184281995054,
+      "audio_seconds": 10.546833333333334,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-20-1.wav"
+    },
+    {
+      "speaker_id": 20,
+      "trial": 2,
+      "generation_ms": 6353.008926962502,
+      "audio_seconds": 10.537541666666666,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-20-2.wav"
+    },
+    {
+      "speaker_id": 58,
+      "trial": 0,
+      "generation_ms": 5598.923774028663,
+      "audio_seconds": 9.39825,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-58-0.wav"
+    },
+    {
+      "speaker_id": 58,
+      "trial": 1,
+      "generation_ms": 5621.30579695804,
+      "audio_seconds": 9.393666666666666,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-58-1.wav"
+    },
+    {
+      "speaker_id": 58,
+      "trial": 2,
+      "generation_ms": 5742.792745004408,
+      "audio_seconds": 9.394916666666667,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-58-2.wav"
+    },
+    {
+      "speaker_id": 59,
+      "trial": 0,
+      "generation_ms": 5799.667140003294,
+      "audio_seconds": 9.400416666666667,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-59-0.wav"
+    },
+    {
+      "speaker_id": 59,
+      "trial": 1,
+      "generation_ms": 5961.207328015007,
+      "audio_seconds": 9.399333333333333,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-59-1.wav"
+    },
+    {
+      "speaker_id": 59,
+      "trial": 2,
+      "generation_ms": 5953.676866018213,
+      "audio_seconds": 9.404041666666666,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/final-preset-59-2.wav"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "url": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/master/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "bytes": 1117320736
+  },
+  {
+    "file": "sensevoice.tar.bz2",
+    "directory": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+    "sha256": "7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2",
+    "bytes": 163002883
+  },
+  {
+    "file": "melotts.tar.bz2",
+    "directory": "vits-melo-tts-zh_en",
+    "sha256": "e58351ed7149f290a54534538badd4077cdbe6fddc964b24d0bee870415d1514",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-melo-tts-zh_en.tar.bz2",
+    "bytes": 167006755
+  }
+]

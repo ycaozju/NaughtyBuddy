@@ -1,0 +1,63 @@
+{
+  "text": "小兔子沿着弯弯的小路向前走，看见一片漂亮的花丛，花瓣上还有亮晶晶的小水珠。它停下来轻轻地挥手，和身边的朋友一起听小鸟唱歌，准备去树下休息。",
+  "text_chars": 69,
+  "reference_text": "今天的阳光很温暖，小兔子和朋友一起在草地上散步。我们慢慢说话，听见小鸟在唱歌。今天的阳光很温暖，小兔子和朋友一起在草地上散步。我们慢慢说话，听见小鸟在唱歌。你好呀，我们一起讲一个小兔子的故事。",
+  "reference_path": "/home/timocy/babybot/.runtime/voice-benchmark/reference-synthetic-melo-20s.wav",
+  "synthetic_reference_only": true,
+  "samples": [
+    {
+      "voice_id": "kokoro-female-1",
+      "threads": 2,
+      "generation_ms": 7710.933666035999,
+      "audio_seconds": 15.808833333333334,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/boundary-kokoro-female-1-2threads.wav",
+      "speaker_id": 3
+    },
+    {
+      "voice_id": "kokoro-male-2",
+      "threads": 2,
+      "generation_ms": 10781.886801996734,
+      "audio_seconds": 18.040666666666667,
+      "within_8_seconds": false,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/boundary-kokoro-male-2-2threads.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "threads": 2,
+      "generation_ms": 8858.13062399393,
+      "audio_seconds": 13.777583333333334,
+      "within_8_seconds": false,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/boundary-synthetic-clone-20s-2threads.wav"
+    },
+    {
+      "voice_id": "kokoro-female-1",
+      "threads": 4,
+      "generation_ms": 6839.405314007308,
+      "audio_seconds": 15.808833333333334,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/boundary-kokoro-female-1-4threads.wav",
+      "speaker_id": 3
+    },
+    {
+      "voice_id": "kokoro-male-2",
+      "threads": 4,
+      "generation_ms": 9454.164885042701,
+      "audio_seconds": 18.040666666666667,
+      "within_8_seconds": false,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/boundary-kokoro-male-2-4threads.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "threads": 4,
+      "generation_ms": 6244.044450984802,
+      "audio_seconds": 13.150791666666667,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/boundary-synthetic-clone-20s-4threads.wav"
+    }
+  ],
+  "preset_map_revision": 1,
+  "preset_note": "Historical measurements include sid74 as kokoro-male-2. Final preset map replaces it with sid59 after sid74 exceeded the 8-second fixed-response budget. Original results are preserved."
+}

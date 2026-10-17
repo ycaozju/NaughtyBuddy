@@ -1,0 +1,21 @@
+{
+  "version": "0.3.0",
+  "backend": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "132",
+    "time": "5.451",
+    "timestamp": "2026-10-13T13:24:01.572497+08:00",
+    "hostname": "timocy-FAEX1"
+  },
+  "frontend": {
+    "passed": 33,
+    "audio": 5,
+    "session": 16,
+    "voices": 12,
+    "evidence": "Successful explicit Node test commands in terminal; no separate TAP file retained"
+  },
+  "no_real_voice_similarity_claim": true
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-10-13T03:13:24.363Z",
+  "base": "http://127.0.0.1:8765",
+  "browser": "Chromium headless",
+  "microphone": "Silent virtual microphone",
+  "tests": [
+    {
+      "name": "Desktop landing page renders without horizontal overflow",
+      "passed": true,
+      "elapsed_ms": 68
+    },
+    {
+      "name": "390px mobile view has no horizontal overflow and retains usable controls",
+      "passed": true,
+      "elapsed_ms": 90
+    },
+    {
+      "name": "Family login, parent unlock, fixed preferences, settings save and relock",
+      "passed": true,
+      "elapsed_ms": 522
+    },
+    {
+      "name": "Start obtains real browser microphone tracks and Stop ends every track",
+      "passed": true,
+      "elapsed_ms": 212,
+      "physical_microphone": false,
+      "native_getUserMedia": true,
+      "click_to_all_tracks_ended_ms": 0.3999999761581421,
+      "all_states_ended": true,
+      "timing_definition": "DOM click capture to native MediaStreamTrack.stop return with readyState ended; excludes physical device shutdown latency"
+    },
+    {
+      "name": "Push-to-talk responds to press/release and silence creates no model request",
+      "passed": true,
+      "elapsed_ms": 596
+    },
+    {
+      "name": "Actual page navigation fires pagehide and server session closes",
+      "passed": true,
+      "elapsed_ms": 647,
+      "event": "native pagehide caused by navigation"
+    },
+    {
+      "name": "Visibility safety handler ends tracks and requires a fresh start",
+      "passed": true,
+      "elapsed_ms": 62,
+      "event": "synthetic visibilitychange; native track disposal verified"
+    },
+    {
+      "name": "Keyboard assist reaches the real local model and acknowledges actual audio completion",
+      "passed": true,
+      "elapsed_ms": 5723,
+      "elapsed_to_completed_playback_ms": 5594,
+      "text_send_to_audio_start_ms": 1339.8999999761581,
+      "source": "generated",
+      "reply": "小兔子找到一颗闪闪发光的种子，心里充满好奇。",
+      "timing_definition": "WebSocket text send to AudioBufferSourceNode.start invocation; excludes speaker hardware latency"
+    },
+    {
+      "name": "No JavaScript, console or Content Security Policy errors",
+      "passed": true,
+      "elapsed_ms": 0
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "csp_violations": [],
+  "limitations": [
+    "No physical Android device, real child voice, room acoustics or speaker echo cancellation was tested."
+  ],
+  "provider": "local",
+  "passed": true
+}

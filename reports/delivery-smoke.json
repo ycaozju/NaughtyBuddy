@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-13T11:40:12.354648+08:00",
+  "health": {
+    "status": "ok",
+    "provider": "local",
+    "backend": "local",
+    "version": "0.1.0"
+  },
+  "checks": [
+    {
+      "mode": "riddle",
+      "source": "curated",
+      "safety": "approved",
+      "ended": "user_stop",
+      "passed": true
+    },
+    {
+      "mode": "story",
+      "source": "fallback",
+      "safety": "approved",
+      "ended": "user_stop",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "note": "Final server restart/warmup plus authenticated real model curated reply and deterministic hot-surface routing; not a replacement for speech E2E."
+}

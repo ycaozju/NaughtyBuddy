@@ -1,0 +1,215 @@
+{
+  "synthetic_reference_only": true,
+  "human_voice_cloned": false,
+  "reference_text": "今天的阳光很温暖，小兔子和朋友一起在草地上散步。我们慢慢说话，听见小鸟在唱歌。",
+  "target_text": "你好呀，我们一起讲一个小兔子的故事。",
+  "runs": [
+    {
+      "engine": "melo",
+      "voice_id": "melo-default",
+      "threads": 2,
+      "load_ms": 0.0033070100471377373,
+      "samples": [
+        {
+          "generation_ms": 479.8321549897082,
+          "audio_seconds": 2.9605442176870747,
+          "real_time_factor": 0.16207565896940973,
+          "sample_rate": 44100,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/melo-default-0.wav",
+          "sha256": "f9e7adb047cdb0870a2f7b1054c1727976505f025168a67e7cc45f44e4f21ce6"
+        },
+        {
+          "generation_ms": 467.22288097953424,
+          "audio_seconds": 2.9605442176870747,
+          "real_time_factor": 0.1578165521690982,
+          "sample_rate": 44100,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/melo-default-1.wav",
+          "sha256": "04120a7a838091938894310c25c109abcca88936e66220296399d01d1f9801e9"
+        }
+      ],
+      "recognized_text": "你好呀，我们一起讲一个小兔子的故事。",
+      "max_generation_ms": 479.8321549897082,
+      "speaker_id": 0
+    },
+    {
+      "engine": "zipvoice",
+      "voice_id": "synthetic-melo-clone",
+      "threads": 2,
+      "load_ms": 720.2683680225164,
+      "samples": [
+        {
+          "generation_ms": 1138.1709889974445,
+          "audio_seconds": 3.1987083333333333,
+          "real_time_factor": 0.3558220601536905,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/synthetic-melo-clone-0.wav",
+          "sha256": "aea8a657e5941eb49c2f73eafcaa99784187c25189cc64ebd91486d4bb46b437"
+        },
+        {
+          "generation_ms": 1118.152427021414,
+          "audio_seconds": 3.111625,
+          "real_time_factor": 0.3593467808689717,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/synthetic-melo-clone-1.wav",
+          "sha256": "c0891ded308adb56fb5354f5c175e00dd604a9600bf8059be0b1d19c169bc3af"
+        },
+        {
+          "generation_ms": 1110.905579989776,
+          "audio_seconds": 2.904,
+          "real_time_factor": 0.38254324379813226,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/synthetic-melo-clone-2.wav",
+          "sha256": "59e7147e31f46e094147a252af96357f404fece17fc84c8afad50bccda39f22c"
+        }
+      ],
+      "recognized_text": "你好呀，我们一起讲一个小兔子的故事。",
+      "max_generation_ms": 1138.1709889974445
+    },
+    {
+      "engine": "kokoro",
+      "voice_id": "kokoro-female-1",
+      "threads": 2,
+      "load_ms": 841.5873409830965,
+      "samples": [
+        {
+          "generation_ms": 1906.3986569526605,
+          "audio_seconds": 3.7602083333333334,
+          "real_time_factor": 0.5069928280443664,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-female-1-0.wav",
+          "sha256": "1baddb0e79c0d19c6f9b973273bec415d2a880cdf1dbcecc4c562449fc3efce6"
+        },
+        {
+          "generation_ms": 1895.4613949754275,
+          "audio_seconds": 3.762125,
+          "real_time_factor": 0.5038273302921693,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-female-1-1.wav",
+          "sha256": "052ed1d3242d3984bd0c479da2767f9a63583481b8a352cfc0ada56629183f3f"
+        },
+        {
+          "generation_ms": 1877.938097983133,
+          "audio_seconds": 3.7741666666666664,
+          "real_time_factor": 0.4975768861955751,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-female-1-2.wav",
+          "sha256": "67e5e866498b508559f63768962fa11f47db40eb7dda0410dc45a75ef113f594"
+        }
+      ],
+      "recognized_text": "你好呀，我们一起讲一个小兔子的故事。",
+      "max_generation_ms": 1906.3986569526605,
+      "speaker_id": 3
+    },
+    {
+      "engine": "kokoro",
+      "voice_id": "kokoro-female-2",
+      "threads": 2,
+      "load_ms": 841.5873409830965,
+      "samples": [
+        {
+          "generation_ms": 2146.5876799775288,
+          "audio_seconds": 4.331791666666667,
+          "real_time_factor": 0.4955426865275212,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-female-2-0.wav",
+          "sha256": "fedf9d1ffaadb2fff7222868c6ea61720207051496a53577d2d4209abfdca9a6"
+        },
+        {
+          "generation_ms": 2150.2791380044073,
+          "audio_seconds": 4.331833333333333,
+          "real_time_factor": 0.49639008995523237,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-female-2-1.wav",
+          "sha256": "53a7ee9e455503448837627c8d2d5d73d3652695551b9894b014e8f9b13ee131"
+        },
+        {
+          "generation_ms": 2144.8981229914352,
+          "audio_seconds": 4.331708333333333,
+          "real_time_factor": 0.49516217573700183,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-female-2-2.wav",
+          "sha256": "8d29d8d826b7ef860b42b5c362e4430998d4910a1be40592d2d0ccf655ef6ed9"
+        }
+      ],
+      "recognized_text": "你好呀，我们一起讲一个小兔子的故事。",
+      "max_generation_ms": 2150.2791380044073,
+      "speaker_id": 20
+    },
+    {
+      "engine": "kokoro",
+      "voice_id": "kokoro-male-1",
+      "threads": 2,
+      "load_ms": 841.5873409830965,
+      "samples": [
+        {
+          "generation_ms": 1934.6656969864853,
+          "audio_seconds": 3.9013333333333335,
+          "real_time_factor": 0.49589858945313187,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-male-1-0.wav",
+          "sha256": "672b815bd2cd691b2ccca30f03626a45b3f79ba344fc2eb142de05286606cf46"
+        },
+        {
+          "generation_ms": 1952.9673189972527,
+          "audio_seconds": 3.9013333333333335,
+          "real_time_factor": 0.5005897092439985,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-male-1-1.wav",
+          "sha256": "6ef1c308b3b950a48e1d05c115f040072355a911e3a2382472e10fb12e133a7a"
+        },
+        {
+          "generation_ms": 1950.7150500430726,
+          "audio_seconds": 3.89275,
+          "real_time_factor": 0.5011149059259065,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-male-1-2.wav",
+          "sha256": "b953106e336cc7ce3cfb904b35084bece24ed8e630e7ac4587afb124aa4d927f"
+        }
+      ],
+      "recognized_text": "你好呀，我们一起讲一个小兔子的故事。",
+      "max_generation_ms": 1952.9673189972527,
+      "speaker_id": 58
+    },
+    {
+      "engine": "kokoro",
+      "voice_id": "kokoro-male-2",
+      "threads": 2,
+      "load_ms": 841.5873409830965,
+      "samples": [
+        {
+          "generation_ms": 2826.23305299785,
+          "audio_seconds": 4.5960833333333335,
+          "real_time_factor": 0.6149220647285586,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-male-2-0.wav",
+          "sha256": "3630d581d42562f34392b314df589351ce1e433403d0bc288d2f2abd95a7f07a"
+        },
+        {
+          "generation_ms": 2819.364636030514,
+          "audio_seconds": 4.608458333333333,
+          "real_time_factor": 0.6117804333040906,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-male-2-1.wav",
+          "sha256": "4617f5f8c3bc2eeecf981256e1e6733e5c001f21a728313a10f3e1b0ac7ff3f6"
+        },
+        {
+          "generation_ms": 2828.755921975244,
+          "audio_seconds": 4.598541666666667,
+          "real_time_factor": 0.61514195739053,
+          "sample_rate": 24000,
+          "path": "/home/timocy/babybot/.runtime/voice-benchmark/kokoro-male-2-2.wav",
+          "sha256": "269cadde4e046ea4807c0aa62c6f93509cc2bfb4a999d78b334d9ba03f2c1add"
+        }
+      ],
+      "recognized_text": "你好呀，我们一起讲一个小兔子的故事。",
+      "max_generation_ms": 2828.755921975244,
+      "speaker_id": 74
+    }
+  ],
+  "reference_creation_ms": 2822.436213027686,
+  "reference_audio_path": "/home/timocy/babybot/.runtime/voice-benchmark/reference-synthetic-melo-16k.wav",
+  "reference_sha256": "1ca0bcc90f91415399ec3e24b71822be44804a5e42e0b63acbb5309a83051365",
+  "reference_duration_seconds": 7.0184375,
+  "preset_map_revision": 1,
+  "preset_note": "Historical measurements include sid74 as kokoro-male-2. Final preset map replaces it with sid59 after sid74 exceeded the 8-second fixed-response budget. Original results are preserved."
+}

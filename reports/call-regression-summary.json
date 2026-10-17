@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "kind": "control-regression-not-model-e2e",
+  "backend": {
+    "passed": 92,
+    "failed": 0,
+    "duration_s": 4.151,
+    "evidence": "call-unit-tests.xml",
+    "reproduce_command": ".venv/bin/python -m pytest tests -q --timeout=20 --junitxml=reports/call-unit-tests.xml"
+  },
+  "frontend": {
+    "passed": 21,
+    "failed": 0,
+    "audio_cases": 5,
+    "session_cases": 16,
+    "evidence": "Agent terminal execution of Node tests; no separate TAP file retained",
+    "reproduce_commands": [
+      "node tests/frontend/audio.test.cjs",
+      "node tests/frontend/session.test.cjs"
+    ]
+  }
+}

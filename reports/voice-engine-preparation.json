@@ -1,0 +1,153 @@
+{
+  "threads": 2,
+  "synthetic_reference_only": true,
+  "human_voice_cloned": false,
+  "reference_seconds": 20,
+  "texts": {
+    "longest_fixed": "身体的问题可以问。你的身体属于你，如果有人让你不舒服，请告诉安全、可信任的大人。",
+    "preview": "我是小芽，一个AI玩伴。我们一起讲个温暖的小故事吧。"
+  },
+  "samples": [
+    {
+      "voice_id": "kokoro-male-2",
+      "text_id": "longest_fixed",
+      "text_chars": 40,
+      "sample": 0,
+      "load_ms": 1073.2108939555474,
+      "generation_ms": 8103.500780009199,
+      "audio_seconds": 11.336541666666667,
+      "within_8_seconds": false,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-kokoro-male-2-longest_fixed-0.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "kokoro-male-2",
+      "text_id": "longest_fixed",
+      "text_chars": 40,
+      "sample": 1,
+      "load_ms": 1073.2108939555474,
+      "generation_ms": 7863.770250056405,
+      "audio_seconds": 11.34425,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-kokoro-male-2-longest_fixed-1.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "kokoro-male-2",
+      "text_id": "longest_fixed",
+      "text_chars": 40,
+      "sample": 2,
+      "load_ms": 1073.2108939555474,
+      "generation_ms": 7745.463598985225,
+      "audio_seconds": 11.354708333333333,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-kokoro-male-2-longest_fixed-2.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "kokoro-male-2",
+      "text_id": "preview",
+      "text_chars": 26,
+      "sample": 0,
+      "load_ms": 1073.2108939555474,
+      "generation_ms": 4178.040332044475,
+      "audio_seconds": 6.110875,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-kokoro-male-2-preview-0.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "kokoro-male-2",
+      "text_id": "preview",
+      "text_chars": 26,
+      "sample": 1,
+      "load_ms": 1073.2108939555474,
+      "generation_ms": 3853.3394739497453,
+      "audio_seconds": 6.110833333333333,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-kokoro-male-2-preview-1.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "kokoro-male-2",
+      "text_id": "preview",
+      "text_chars": 26,
+      "sample": 2,
+      "load_ms": 1073.2108939555474,
+      "generation_ms": 4050.1267820363864,
+      "audio_seconds": 6.097916666666666,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-kokoro-male-2-preview-2.wav",
+      "speaker_id": 74
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "text_id": "longest_fixed",
+      "text_chars": 40,
+      "sample": 0,
+      "load_ms": 1039.6266540046781,
+      "generation_ms": 5316.885448002722,
+      "audio_seconds": 7.054708333333333,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-synthetic-clone-20s-longest_fixed-0.wav"
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "text_id": "longest_fixed",
+      "text_chars": 40,
+      "sample": 1,
+      "load_ms": 1039.6266540046781,
+      "generation_ms": 5131.791724998038,
+      "audio_seconds": 7.5220416666666665,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-synthetic-clone-20s-longest_fixed-1.wav"
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "text_id": "longest_fixed",
+      "text_chars": 40,
+      "sample": 2,
+      "load_ms": 1039.6266540046781,
+      "generation_ms": 5094.617403985467,
+      "audio_seconds": 6.903708333333333,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-synthetic-clone-20s-longest_fixed-2.wav"
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "text_id": "preview",
+      "text_chars": 26,
+      "sample": 0,
+      "load_ms": 1039.6266540046781,
+      "generation_ms": 4535.051696002483,
+      "audio_seconds": 4.144875,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-synthetic-clone-20s-preview-0.wav"
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "text_id": "preview",
+      "text_chars": 26,
+      "sample": 1,
+      "load_ms": 1039.6266540046781,
+      "generation_ms": 4596.168680000119,
+      "audio_seconds": 4.618166666666666,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-synthetic-clone-20s-preview-1.wav"
+    },
+    {
+      "voice_id": "synthetic-clone-20s",
+      "text_id": "preview",
+      "text_chars": 26,
+      "sample": 2,
+      "load_ms": 1039.6266540046781,
+      "generation_ms": 4552.491558017209,
+      "audio_seconds": 5.214291666666667,
+      "within_8_seconds": true,
+      "wav": "/home/timocy/babybot/.runtime/voice-benchmark/preparation-synthetic-clone-20s-preview-2.wav"
+    }
+  ],
+  "passed": false,
+  "preset_map_revision": 1,
+  "preset_note": "Historical measurements include sid74 as kokoro-male-2. Final preset map replaces it with sid59 after sid74 exceeded the 8-second fixed-response budget. Original results are preserved."
+}

@@ -1,0 +1,2149 @@
+{
+  "kind": "real-local-model-speech-stress",
+  "synthetic_speech_only": true,
+  "started_at": "2026-10-13T10:49:12+0800",
+  "url": "http://127.0.0.1:8765",
+  "server_health": {
+    "status": "ok",
+    "provider": "local",
+    "backend": "local",
+    "version": "0.1.0"
+  },
+  "concurrency_levels": [
+    1,
+    2,
+    4
+  ],
+  "rounds_per_level": 3,
+  "memory_process_ids": [
+    348324,
+    349187
+  ],
+  "levels": [
+    {
+      "concurrency": 1,
+      "requests": 3,
+      "completed": 3,
+      "generated": 3,
+      "fallback": 0,
+      "overload_rejections": 0,
+      "unexpected_failures": 0,
+      "failure_rate_including_overload": 0.0,
+      "unexpected_failure_rate": 0.0,
+      "completion_per_second": 0.6071,
+      "elapsed_s": 4.94,
+      "latency_p50_ms": 1840.87,
+      "latency_p95_ms": 2173.34,
+      "latency_max_ms": 2210.28,
+      "samples": [
+        {
+          "round": 1,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 858.43,
+          "elapsed_ms": 865.26,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "好的！小兔子在森林里快乐地散步。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 34.69,
+            "llm_ms": 464.13,
+            "review_ms": 89.64,
+            "tts_ms": 256.19,
+            "total_ms": 845.44
+          },
+          "audio_duration_s": 2.891,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "ccfb5a298d1d7342",
+              "text": "好的！小兔子在森林里快乐地散步。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 34.69,
+                "llm_ms": 464.13,
+                "review_ms": 89.64,
+                "tts_ms": 256.19,
+                "total_ms": 845.44
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 2210.28,
+          "elapsed_ms": 2216.95,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "好的！小兔子在森林里快乐地蹦跳着，它的毛茸茸的身体在阳光下闪闪发光。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 46.96,
+            "llm_ms": 1513.3,
+            "review_ms": 74.17,
+            "tts_ms": 545.24,
+            "total_ms": 2180.4
+          },
+          "audio_duration_s": 6.153,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "1177db6cb02d5e2a",
+              "text": "好的！小兔子在森林里快乐地蹦跳着，它的毛茸茸的身体在阳光下闪闪发光。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 46.96,
+                "llm_ms": 1513.3,
+                "review_ms": 74.17,
+                "tts_ms": 545.24,
+                "total_ms": 2180.4
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 1840.87,
+          "elapsed_ms": 1847.71,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子在森林里玩耍，突然遇到一只受伤的松鼠。它决定带松鼠回家，并给它治疗伤口。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 33.47,
+            "llm_ms": 1053.14,
+            "review_ms": 93.88,
+            "tts_ms": 633.02,
+            "total_ms": 1814.25
+          },
+          "audio_duration_s": 6.85,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "ae39d7cfe3e39565",
+              "text": "小兔子在森林里玩耍，突然遇到一只受伤的松鼠。它决定带松鼠回家，并给它治疗伤口。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 33.47,
+                "llm_ms": 1053.14,
+                "review_ms": 93.88,
+                "tts_ms": 633.02,
+                "total_ms": 1814.25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concurrency": 2,
+      "requests": 6,
+      "completed": 6,
+      "generated": 6,
+      "fallback": 0,
+      "overload_rejections": 0,
+      "unexpected_failures": 0,
+      "failure_rate_including_overload": 0.0,
+      "unexpected_failure_rate": 0.0,
+      "completion_per_second": 0.753,
+      "elapsed_s": 7.97,
+      "latency_p50_ms": 1991.55,
+      "latency_p95_ms": 3010.48,
+      "latency_max_ms": 3122.09,
+      "samples": [
+        {
+          "round": 1,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 1462.36,
+          "elapsed_ms": 1469.95,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子蹦蹦跳跳地在草地上玩耍。突然，它闻到一股奇怪的味道。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 34.39,
+            "llm_ms": 561.48,
+            "review_ms": 126.94,
+            "tts_ms": 715.89,
+            "total_ms": 1439.87
+          },
+          "audio_duration_s": 5.317,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "a05fed16098b5b1f",
+              "text": "小兔子蹦蹦跳跳地在草地上玩耍。突然，它闻到一股奇怪的味道。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 34.39,
+                "llm_ms": 561.48,
+                "review_ms": 126.94,
+                "tts_ms": 715.89,
+                "total_ms": 1439.87
+              }
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "request": 2,
+          "ok": true,
+          "latency_ms": 2141.47,
+          "elapsed_ms": 2150.29,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔在森林里散步，遇到一只小鸟。小鸟说：“你好！",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 77.89,
+            "llm_ms": 1609.41,
+            "review_ms": 80.34,
+            "tts_ms": 355.1,
+            "total_ms": 2123.3
+          },
+          "audio_duration_s": 3.971,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "c628aa8470205ce3",
+              "text": "小兔在森林里散步，遇到一只小鸟。小鸟说：“你好！",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 77.89,
+                "llm_ms": 1609.41,
+                "review_ms": 80.34,
+                "tts_ms": 355.1,
+                "total_ms": 2123.3
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 1841.64,
+          "elapsed_ms": 1847.12,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子在草地上快乐地蹦跳着，突然发现了一块大大的胡萝卜。它高兴得差点儿飞起来！",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 36.21,
+            "llm_ms": 901.04,
+            "review_ms": 136.49,
+            "tts_ms": 738.63,
+            "total_ms": 1815.05
+          },
+          "audio_duration_s": 6.931,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "ef41e0018929bf28",
+              "text": "小兔子在草地上快乐地蹦跳着，突然发现了一块大大的胡萝卜。它高兴得差点儿飞起来！",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 36.21,
+                "llm_ms": 901.04,
+                "review_ms": 136.49,
+                "tts_ms": 738.63,
+                "total_ms": 1815.05
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "request": 2,
+          "ok": true,
+          "latency_ms": 2675.64,
+          "elapsed_ms": 2684.69,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔在森林里探险，它遇到了一只聪明的狐狸。狐狸问：“你为什么要跑啊？",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 85.89,
+            "llm_ms": 1979.6,
+            "review_ms": 96.98,
+            "tts_ms": 491.15,
+            "total_ms": 2654.2
+          },
+          "audio_duration_s": 5.433,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "2d42133cbe73ff9f",
+              "text": "小兔在森林里探险，它遇到了一只聪明的狐狸。狐狸问：“你为什么要跑啊？",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 85.89,
+                "llm_ms": 1979.6,
+                "review_ms": 96.98,
+                "tts_ms": 491.15,
+                "total_ms": 2654.2
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 1155.73,
+          "elapsed_ms": 1162.91,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "好的！小兔子在草地上蹦蹦跳跳，准备找妈妈吃萝卜。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 39.78,
+            "llm_ms": 412.49,
+            "review_ms": 105.94,
+            "tts_ms": 575.49,
+            "total_ms": 1135.54
+          },
+          "audio_duration_s": 4.574,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "25f9f587a536233e",
+              "text": "好的！小兔子在草地上蹦蹦跳跳，准备找妈妈吃萝卜。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 39.78,
+                "llm_ms": 412.49,
+                "review_ms": 105.94,
+                "tts_ms": 575.49,
+                "total_ms": 1135.54
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "request": 2,
+          "ok": true,
+          "latency_ms": 3122.09,
+          "elapsed_ms": 3130.98,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子在森林里采蘑菇，突然遇到了一只狐狸。狐狸想要吃掉小兔子，但是小兔子聪明地躲开了。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 94.72,
+            "llm_ms": 2240.99,
+            "review_ms": 97.87,
+            "tts_ms": 658.3,
+            "total_ms": 3092.66
+          },
+          "audio_duration_s": 7.15,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "f850eb2b16ba0f97",
+              "text": "小兔子在森林里采蘑菇，突然遇到了一只狐狸。狐狸想要吃掉小兔子，但是小兔子聪明地躲开了。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 94.72,
+                "llm_ms": 2240.99,
+                "review_ms": 97.87,
+                "tts_ms": 658.3,
+                "total_ms": 3092.66
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concurrency": 4,
+      "requests": 12,
+      "completed": 6,
+      "generated": 6,
+      "fallback": 0,
+      "overload_rejections": 6,
+      "unexpected_failures": 0,
+      "failure_rate_including_overload": 0.5,
+      "unexpected_failure_rate": 0.0,
+      "completion_per_second": 0.6071,
+      "elapsed_s": 9.88,
+      "latency_p50_ms": 3103.47,
+      "latency_p95_ms": 3857.63,
+      "latency_max_ms": 4008.47,
+      "samples": [
+        {
+          "round": 1,
+          "request": 1,
+          "ok": false,
+          "error": "overloaded",
+          "message": "现在有点忙，请稍后再试。",
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ],
+          "elapsed_ms": 10.41
+        },
+        {
+          "round": 1,
+          "request": 2,
+          "ok": true,
+          "latency_ms": 2484.99,
+          "elapsed_ms": 2492.12,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔在草地上玩耍，突然发现了一只迷路的鸟。它想帮这只小鸟找到回家的路。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 49.07,
+            "llm_ms": 1106.42,
+            "review_ms": 101.01,
+            "tts_ms": 1202.74,
+            "total_ms": 2460.21
+          },
+          "audio_duration_s": 6.397,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "bf11e3c435761625",
+              "text": "小兔在草地上玩耍，突然发现了一只迷路的鸟。它想帮这只小鸟找到回家的路。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 49.07,
+                "llm_ms": 1106.42,
+                "review_ms": 101.01,
+                "tts_ms": 1202.74,
+                "total_ms": 2460.21
+              }
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "request": 3,
+          "ok": true,
+          "latency_ms": 1922.67,
+          "elapsed_ms": 1932.15,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子住在一片绿油油的草地上，它喜欢在阳光下蹦跳玩耍。今天，小兔子遇到了一只迷路的小鸟。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 111.05,
+            "llm_ms": 871.56,
+            "review_ms": 148.99,
+            "tts_ms": 757.86,
+            "total_ms": 1890.21
+          },
+          "audio_duration_s": 7.726,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "d1f2dd54ff702a20",
+              "text": "小兔子住在一片绿油油的草地上，它喜欢在阳光下蹦跳玩耍。今天，小兔子遇到了一只迷路的小鸟。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 111.05,
+                "llm_ms": 871.56,
+                "review_ms": 148.99,
+                "tts_ms": 757.86,
+                "total_ms": 1890.21
+              }
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "request": 4,
+          "ok": false,
+          "error": "overloaded",
+          "message": "现在有点忙，请稍后再试。",
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ],
+          "elapsed_ms": 11.06
+        },
+        {
+          "round": 2,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 3355.81,
+          "elapsed_ms": 3372.82,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子在森林里发现了一片美丽的花海。它兴奋地跑着，欣赏这美景。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 35.51,
+            "llm_ms": 2471.63,
+            "review_ms": 97.39,
+            "tts_ms": 728.59,
+            "total_ms": 3333.8
+          },
+          "audio_duration_s": 5.689,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "a578b6deb55bc2a4",
+              "text": "小兔子在森林里发现了一片美丽的花海。它兴奋地跑着，欣赏这美景。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 35.51,
+                "llm_ms": 2471.63,
+                "review_ms": 97.39,
+                "tts_ms": 728.59,
+                "total_ms": 3333.8
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "request": 2,
+          "ok": true,
+          "latency_ms": 2851.12,
+          "elapsed_ms": 2861.69,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子在草地上快乐地奔跑，\n突然发现了一块漂亮的花田。\n它兴奋地跳到花丛中闻气味，\n然后悄悄地躲在一旁，观察着。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 108.99,
+            "llm_ms": 1232.38,
+            "review_ms": 188.11,
+            "tts_ms": 1284.41,
+            "total_ms": 2814.79
+          },
+          "audio_duration_s": 9.893,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "9439c85a5d2ab583",
+              "text": "小兔子在草地上快乐地奔跑，\n突然发现了一块漂亮的花田。\n它兴奋地跳到花丛中闻气味，\n然后悄悄地躲在一旁，观察着。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 108.99,
+                "llm_ms": 1232.38,
+                "review_ms": 188.11,
+                "tts_ms": 1284.41,
+                "total_ms": 2814.79
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "request": 3,
+          "ok": false,
+          "error": "overloaded",
+          "message": "现在有点忙，请稍后再试。",
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ],
+          "elapsed_ms": 10.84
+        },
+        {
+          "round": 2,
+          "request": 4,
+          "ok": false,
+          "error": "overloaded",
+          "message": "现在有点忙，请稍后再试。",
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ],
+          "elapsed_ms": 11.24
+        },
+        {
+          "round": 3,
+          "request": 1,
+          "ok": true,
+          "latency_ms": 3405.12,
+          "elapsed_ms": 3415.57,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子在草地上玩耍，突然发现了一只漂亮的蝴蝶。它想捉住这只蝴蝶，但不小心绊倒了，撞翻了一个花盆，弄脏了自己的鞋子。",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 86.98,
+            "llm_ms": 2064.85,
+            "review_ms": 140.83,
+            "tts_ms": 1074.96,
+            "total_ms": 3368.36
+          },
+          "audio_duration_s": 9.868,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "1ee74dfff2044461",
+              "text": "小兔子在草地上玩耍，突然发现了一只漂亮的蝴蝶。它想捉住这只蝴蝶，但不小心绊倒了，撞翻了一个花盆，弄脏了自己的鞋子。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 86.98,
+                "llm_ms": 2064.85,
+                "review_ms": 140.83,
+                "tts_ms": 1074.96,
+                "total_ms": 3368.36
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "request": 2,
+          "ok": true,
+          "latency_ms": 4008.47,
+          "elapsed_ms": 4016.16,
+          "transcript": "我们一起讲一个小兔子的故事。",
+          "reply": "小兔子在草地上快乐地奔跑，突然遇到了一只乌龟。小兔子问：“乌龟先生，你怎么这么慢呀？",
+          "source": "generated",
+          "safety": "approved",
+          "timings": {
+            "asr_ms": 34.21,
+            "llm_ms": 2808.28,
+            "review_ms": 183.07,
+            "tts_ms": 948.57,
+            "total_ms": 3974.87
+          },
+          "audio_duration_s": 6.724,
+          "ended": {
+            "type": "ended",
+            "reason": "user_stop"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "839403d9e9310167",
+              "text": "小兔子在草地上快乐地奔跑，突然遇到了一只乌龟。小兔子问：“乌龟先生，你怎么这么慢呀？",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 34.21,
+                "llm_ms": 2808.28,
+                "review_ms": 183.07,
+                "tts_ms": 948.57,
+                "total_ms": 3974.87
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "request": 3,
+          "ok": false,
+          "error": "overloaded",
+          "message": "现在有点忙，请稍后再试。",
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ],
+          "elapsed_ms": 11.64
+        },
+        {
+          "round": 3,
+          "request": 4,
+          "ok": false,
+          "error": "overloaded",
+          "message": "现在有点忙，请稍后再试。",
+          "events": [
+            {
+              "type": "state",
+              "state": "listening",
+              "turn_id": 0
+            },
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ],
+          "elapsed_ms": 12.54
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Small household capacity test; not a long-duration soak or production capacity certification",
+    "p95 is interpolated from the recorded small sample and must not be treated as a stable service SLO",
+    "Synthetic speech, no physical browser capture/playback or child voices",
+    "RSS sums selected server processes and descendants; shared pages may be counted more than once"
+  ],
+  "local_model_health": {
+    "local_only": true,
+    "llm": true,
+    "asr": true,
+    "tts": true,
+    "models": {
+      "llm": "Qwen2.5-1.5B-Instruct-Q4_K_M",
+      "asr": "SenseVoiceSmall-int8",
+      "tts": "MeloTTS-Chinese"
+    },
+    "ok": true
+  },
+  "input_audio_s": 2.334,
+  "warmup": {
+    "ok": true,
+    "latency_ms": 2498.59,
+    "elapsed_ms": 2511.86,
+    "transcript": "我们一起讲一个小兔子的故事。",
+    "reply": "好的，让我们开始吧！小兔子住在一片绿油油的草地上，每天都在那里快乐地蹦跳着。",
+    "source": "generated",
+    "safety": "approved",
+    "timings": {
+      "asr_ms": 33.53,
+      "llm_ms": 1716.34,
+      "review_ms": 127.21,
+      "tts_ms": 594.7,
+      "total_ms": 2472.66
+    },
+    "audio_duration_s": 6.505,
+    "ended": {
+      "type": "ended",
+      "reason": "user_stop"
+    },
+    "events": [
+      {
+        "type": "state",
+        "state": "listening",
+        "turn_id": 0
+      },
+      {
+        "type": "state",
+        "state": "transcribing",
+        "turn_id": 1
+      },
+      {
+        "type": "transcript",
+        "text": "我们一起讲一个小兔子的故事。",
+        "turn_id": 1
+      },
+      {
+        "type": "state",
+        "state": "thinking",
+        "turn_id": 1
+      },
+      {
+        "type": "state",
+        "state": "checking",
+        "turn_id": 1
+      },
+      {
+        "type": "state",
+        "state": "speaking",
+        "turn_id": 1
+      },
+      {
+        "type": "audio",
+        "turn_id": 1,
+        "chunk_id": "00de189d25d212aa",
+        "text": "好的，让我们开始吧！小兔子住在一片绿油油的草地上，每天都在那里快乐地蹦跳着。",
+        "mime": "audio/wav",
+        "safety": "approved",
+        "source": "generated",
+        "timings": {
+          "asr_ms": 33.53,
+          "llm_ms": 1716.34,
+          "review_ms": 127.21,
+          "tts_ms": 594.7,
+          "total_ms": 2472.66
+        }
+      }
+    ]
+  },
+  "recovery": {
+    "ok": true,
+    "latency_ms": 506.45,
+    "elapsed_ms": 520.17,
+    "transcript": "我们一起讲一个小兔子的故事。",
+    "reply": "好的，小兔乖乖出门散步。",
+    "source": "generated",
+    "safety": "approved",
+    "timings": {
+      "asr_ms": 37.72,
+      "llm_ms": 170.62,
+      "review_ms": 78.56,
+      "tts_ms": 209.19,
+      "total_ms": 496.67
+    },
+    "audio_duration_s": 2.164,
+    "ended": {
+      "type": "ended",
+      "reason": "user_stop"
+    },
+    "events": [
+      {
+        "type": "state",
+        "state": "listening",
+        "turn_id": 0
+      },
+      {
+        "type": "state",
+        "state": "transcribing",
+        "turn_id": 1
+      },
+      {
+        "type": "transcript",
+        "text": "我们一起讲一个小兔子的故事。",
+        "turn_id": 1
+      },
+      {
+        "type": "state",
+        "state": "thinking",
+        "turn_id": 1
+      },
+      {
+        "type": "state",
+        "state": "checking",
+        "turn_id": 1
+      },
+      {
+        "type": "state",
+        "state": "speaking",
+        "turn_id": 1
+      },
+      {
+        "type": "audio",
+        "turn_id": 1,
+        "chunk_id": "65f031b550798cd4",
+        "text": "好的，小兔乖乖出门散步。",
+        "mime": "audio/wav",
+        "safety": "approved",
+        "source": "generated",
+        "timings": {
+          "asr_ms": 37.72,
+          "llm_ms": 170.62,
+          "review_ms": 78.56,
+          "tts_ms": 209.19,
+          "total_ms": 496.67
+        }
+      }
+    ]
+  },
+  "passed": true,
+  "overload_observed": true,
+  "memory": {
+    "available": true,
+    "sample_interval_s": 0.25,
+    "baseline_rss_bytes": 2924494848,
+    "peak_rss_bytes": 3038269440,
+    "final_rss_bytes": 3038068736,
+    "samples": [
+      {
+        "t_monotonic": 395153.345,
+        "rss_bytes": 2924494848,
+        "per_pid_rss_bytes": {
+          "348324": 2110816256,
+          "349187": 813678592
+        }
+      },
+      {
+        "t_monotonic": 395153.62,
+        "rss_bytes": 2929221632,
+        "per_pid_rss_bytes": {
+          "348324": 2115538944,
+          "349187": 813682688
+        }
+      },
+      {
+        "t_monotonic": 395153.886,
+        "rss_bytes": 2935914496,
+        "per_pid_rss_bytes": {
+          "348324": 2122231808,
+          "349187": 813682688
+        }
+      },
+      {
+        "t_monotonic": 395154.15,
+        "rss_bytes": 2936315904,
+        "per_pid_rss_bytes": {
+          "348324": 2122231808,
+          "349187": 814084096
+        }
+      },
+      {
+        "t_monotonic": 395154.425,
+        "rss_bytes": 2940624896,
+        "per_pid_rss_bytes": {
+          "348324": 2126512128,
+          "349187": 814112768
+        }
+      },
+      {
+        "t_monotonic": 395154.696,
+        "rss_bytes": 2940624896,
+        "per_pid_rss_bytes": {
+          "348324": 2126512128,
+          "349187": 814112768
+        }
+      },
+      {
+        "t_monotonic": 395154.968,
+        "rss_bytes": 2940624896,
+        "per_pid_rss_bytes": {
+          "348324": 2126512128,
+          "349187": 814112768
+        }
+      },
+      {
+        "t_monotonic": 395155.241,
+        "rss_bytes": 2940624896,
+        "per_pid_rss_bytes": {
+          "348324": 2126512128,
+          "349187": 814112768
+        }
+      },
+      {
+        "t_monotonic": 395155.512,
+        "rss_bytes": 2940624896,
+        "per_pid_rss_bytes": {
+          "348324": 2126512128,
+          "349187": 814112768
+        }
+      },
+      {
+        "t_monotonic": 395155.782,
+        "rss_bytes": 2940628992,
+        "per_pid_rss_bytes": {
+          "348324": 2126512128,
+          "349187": 814116864
+        }
+      },
+      {
+        "t_monotonic": 395156.056,
+        "rss_bytes": 2948870144,
+        "per_pid_rss_bytes": {
+          "348324": 2134753280,
+          "349187": 814116864
+        }
+      },
+      {
+        "t_monotonic": 395156.32,
+        "rss_bytes": 2948870144,
+        "per_pid_rss_bytes": {
+          "348324": 2134753280,
+          "349187": 814116864
+        }
+      },
+      {
+        "t_monotonic": 395156.589,
+        "rss_bytes": 2955083776,
+        "per_pid_rss_bytes": {
+          "348324": 2139406336,
+          "349187": 815677440
+        }
+      },
+      {
+        "t_monotonic": 395156.855,
+        "rss_bytes": 2955083776,
+        "per_pid_rss_bytes": {
+          "348324": 2139406336,
+          "349187": 815677440
+        }
+      },
+      {
+        "t_monotonic": 395157.13,
+        "rss_bytes": 2955083776,
+        "per_pid_rss_bytes": {
+          "348324": 2139406336,
+          "349187": 815677440
+        }
+      },
+      {
+        "t_monotonic": 395157.401,
+        "rss_bytes": 2955083776,
+        "per_pid_rss_bytes": {
+          "348324": 2139406336,
+          "349187": 815677440
+        }
+      },
+      {
+        "t_monotonic": 395157.665,
+        "rss_bytes": 2962743296,
+        "per_pid_rss_bytes": {
+          "348324": 2147065856,
+          "349187": 815677440
+        }
+      },
+      {
+        "t_monotonic": 395157.929,
+        "rss_bytes": 2963333120,
+        "per_pid_rss_bytes": {
+          "348324": 2147065856,
+          "349187": 816267264
+        }
+      },
+      {
+        "t_monotonic": 395158.193,
+        "rss_bytes": 2963333120,
+        "per_pid_rss_bytes": {
+          "348324": 2147065856,
+          "349187": 816267264
+        }
+      },
+      {
+        "t_monotonic": 395158.468,
+        "rss_bytes": 2960384000,
+        "per_pid_rss_bytes": {
+          "348324": 2142068736,
+          "349187": 818315264
+        }
+      },
+      {
+        "t_monotonic": 395158.742,
+        "rss_bytes": 2960384000,
+        "per_pid_rss_bytes": {
+          "348324": 2142068736,
+          "349187": 818315264
+        }
+      },
+      {
+        "t_monotonic": 395159.011,
+        "rss_bytes": 2967040000,
+        "per_pid_rss_bytes": {
+          "348324": 2148724736,
+          "349187": 818315264
+        }
+      },
+      {
+        "t_monotonic": 395159.281,
+        "rss_bytes": 2967101440,
+        "per_pid_rss_bytes": {
+          "348324": 2148724736,
+          "349187": 818376704
+        }
+      },
+      {
+        "t_monotonic": 395159.549,
+        "rss_bytes": 2967101440,
+        "per_pid_rss_bytes": {
+          "348324": 2148724736,
+          "349187": 818376704
+        }
+      },
+      {
+        "t_monotonic": 395159.82,
+        "rss_bytes": 2966994944,
+        "per_pid_rss_bytes": {
+          "348324": 2148724736,
+          "349187": 818270208
+        }
+      },
+      {
+        "t_monotonic": 395160.088,
+        "rss_bytes": 2975203328,
+        "per_pid_rss_bytes": {
+          "348324": 2156933120,
+          "349187": 818270208
+        }
+      },
+      {
+        "t_monotonic": 395160.351,
+        "rss_bytes": 2975203328,
+        "per_pid_rss_bytes": {
+          "348324": 2156933120,
+          "349187": 818270208
+        }
+      },
+      {
+        "t_monotonic": 395160.624,
+        "rss_bytes": 2965680128,
+        "per_pid_rss_bytes": {
+          "348324": 2148429824,
+          "349187": 817250304
+        }
+      },
+      {
+        "t_monotonic": 395160.89,
+        "rss_bytes": 2965680128,
+        "per_pid_rss_bytes": {
+          "348324": 2148429824,
+          "349187": 817250304
+        }
+      },
+      {
+        "t_monotonic": 395161.156,
+        "rss_bytes": 2965680128,
+        "per_pid_rss_bytes": {
+          "348324": 2148429824,
+          "349187": 817250304
+        }
+      },
+      {
+        "t_monotonic": 395161.423,
+        "rss_bytes": 2972794880,
+        "per_pid_rss_bytes": {
+          "348324": 2155544576,
+          "349187": 817250304
+        }
+      },
+      {
+        "t_monotonic": 395161.689,
+        "rss_bytes": 2972794880,
+        "per_pid_rss_bytes": {
+          "348324": 2155544576,
+          "349187": 817250304
+        }
+      },
+      {
+        "t_monotonic": 395161.954,
+        "rss_bytes": 2972794880,
+        "per_pid_rss_bytes": {
+          "348324": 2155544576,
+          "349187": 817250304
+        }
+      },
+      {
+        "t_monotonic": 395162.22,
+        "rss_bytes": 2972794880,
+        "per_pid_rss_bytes": {
+          "348324": 2155544576,
+          "349187": 817250304
+        }
+      },
+      {
+        "t_monotonic": 395162.483,
+        "rss_bytes": 2974203904,
+        "per_pid_rss_bytes": {
+          "348324": 2155544576,
+          "349187": 818659328
+        }
+      },
+      {
+        "t_monotonic": 395162.748,
+        "rss_bytes": 2982752256,
+        "per_pid_rss_bytes": {
+          "348324": 2164092928,
+          "349187": 818659328
+        }
+      },
+      {
+        "t_monotonic": 395163.023,
+        "rss_bytes": 2982752256,
+        "per_pid_rss_bytes": {
+          "348324": 2164092928,
+          "349187": 818659328
+        }
+      },
+      {
+        "t_monotonic": 395163.291,
+        "rss_bytes": 2974998528,
+        "per_pid_rss_bytes": {
+          "348324": 2157416448,
+          "349187": 817582080
+        }
+      },
+      {
+        "t_monotonic": 395163.556,
+        "rss_bytes": 2974998528,
+        "per_pid_rss_bytes": {
+          "348324": 2157416448,
+          "349187": 817582080
+        }
+      },
+      {
+        "t_monotonic": 395163.822,
+        "rss_bytes": 2981564416,
+        "per_pid_rss_bytes": {
+          "348324": 2163982336,
+          "349187": 817582080
+        }
+      },
+      {
+        "t_monotonic": 395164.091,
+        "rss_bytes": 2981564416,
+        "per_pid_rss_bytes": {
+          "348324": 2163982336,
+          "349187": 817582080
+        }
+      },
+      {
+        "t_monotonic": 395164.357,
+        "rss_bytes": 2981380096,
+        "per_pid_rss_bytes": {
+          "348324": 2163982336,
+          "349187": 817397760
+        }
+      },
+      {
+        "t_monotonic": 395164.622,
+        "rss_bytes": 2981380096,
+        "per_pid_rss_bytes": {
+          "348324": 2163982336,
+          "349187": 817397760
+        }
+      },
+      {
+        "t_monotonic": 395164.887,
+        "rss_bytes": 2981380096,
+        "per_pid_rss_bytes": {
+          "348324": 2163982336,
+          "349187": 817397760
+        }
+      },
+      {
+        "t_monotonic": 395165.15,
+        "rss_bytes": 2981380096,
+        "per_pid_rss_bytes": {
+          "348324": 2163982336,
+          "349187": 817397760
+        }
+      },
+      {
+        "t_monotonic": 395165.413,
+        "rss_bytes": 2981380096,
+        "per_pid_rss_bytes": {
+          "348324": 2163982336,
+          "349187": 817397760
+        }
+      },
+      {
+        "t_monotonic": 395165.677,
+        "rss_bytes": 2989731840,
+        "per_pid_rss_bytes": {
+          "348324": 2173366272,
+          "349187": 816365568
+        }
+      },
+      {
+        "t_monotonic": 395165.941,
+        "rss_bytes": 2989731840,
+        "per_pid_rss_bytes": {
+          "348324": 2173366272,
+          "349187": 816365568
+        }
+      },
+      {
+        "t_monotonic": 395166.206,
+        "rss_bytes": 2995441664,
+        "per_pid_rss_bytes": {
+          "348324": 2173366272,
+          "349187": 822075392
+        }
+      },
+      {
+        "t_monotonic": 395166.473,
+        "rss_bytes": 2986070016,
+        "per_pid_rss_bytes": {
+          "348324": 2169896960,
+          "349187": 816173056
+        }
+      },
+      {
+        "t_monotonic": 395166.739,
+        "rss_bytes": 2986070016,
+        "per_pid_rss_bytes": {
+          "348324": 2169896960,
+          "349187": 816173056
+        }
+      },
+      {
+        "t_monotonic": 395167.006,
+        "rss_bytes": 2986070016,
+        "per_pid_rss_bytes": {
+          "348324": 2169896960,
+          "349187": 816173056
+        }
+      },
+      {
+        "t_monotonic": 395167.268,
+        "rss_bytes": 2993184768,
+        "per_pid_rss_bytes": {
+          "348324": 2177011712,
+          "349187": 816173056
+        }
+      },
+      {
+        "t_monotonic": 395167.533,
+        "rss_bytes": 3000528896,
+        "per_pid_rss_bytes": {
+          "348324": 2184355840,
+          "349187": 816173056
+        }
+      },
+      {
+        "t_monotonic": 395167.795,
+        "rss_bytes": 3000528896,
+        "per_pid_rss_bytes": {
+          "348324": 2184355840,
+          "349187": 816173056
+        }
+      },
+      {
+        "t_monotonic": 395168.059,
+        "rss_bytes": 3000528896,
+        "per_pid_rss_bytes": {
+          "348324": 2184355840,
+          "349187": 816173056
+        }
+      },
+      {
+        "t_monotonic": 395168.324,
+        "rss_bytes": 3001356288,
+        "per_pid_rss_bytes": {
+          "348324": 2184355840,
+          "349187": 817000448
+        }
+      },
+      {
+        "t_monotonic": 395168.587,
+        "rss_bytes": 3001356288,
+        "per_pid_rss_bytes": {
+          "348324": 2184355840,
+          "349187": 817000448
+        }
+      },
+      {
+        "t_monotonic": 395168.865,
+        "rss_bytes": 3001540608,
+        "per_pid_rss_bytes": {
+          "348324": 2184359936,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395169.136,
+        "rss_bytes": 2993893376,
+        "per_pid_rss_bytes": {
+          "348324": 2176712704,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395169.406,
+        "rss_bytes": 2993893376,
+        "per_pid_rss_bytes": {
+          "348324": 2176712704,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395169.677,
+        "rss_bytes": 2993893376,
+        "per_pid_rss_bytes": {
+          "348324": 2176712704,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395169.948,
+        "rss_bytes": 2993893376,
+        "per_pid_rss_bytes": {
+          "348324": 2176712704,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395170.219,
+        "rss_bytes": 3001524224,
+        "per_pid_rss_bytes": {
+          "348324": 2184343552,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395170.487,
+        "rss_bytes": 3001524224,
+        "per_pid_rss_bytes": {
+          "348324": 2184343552,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395170.754,
+        "rss_bytes": 3001524224,
+        "per_pid_rss_bytes": {
+          "348324": 2184343552,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395171.048,
+        "rss_bytes": 3001524224,
+        "per_pid_rss_bytes": {
+          "348324": 2184343552,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395171.318,
+        "rss_bytes": 3010875392,
+        "per_pid_rss_bytes": {
+          "348324": 2193694720,
+          "349187": 817180672
+        }
+      },
+      {
+        "t_monotonic": 395171.581,
+        "rss_bytes": 3018330112,
+        "per_pid_rss_bytes": {
+          "348324": 2193694720,
+          "349187": 824635392
+        }
+      },
+      {
+        "t_monotonic": 395171.847,
+        "rss_bytes": 3018330112,
+        "per_pid_rss_bytes": {
+          "348324": 2193694720,
+          "349187": 824635392
+        }
+      },
+      {
+        "t_monotonic": 395172.11,
+        "rss_bytes": 3017515008,
+        "per_pid_rss_bytes": {
+          "348324": 2193694720,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395172.375,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395172.639,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395172.902,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395173.164,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395173.427,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395173.69,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395173.954,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395174.217,
+        "rss_bytes": 3017531392,
+        "per_pid_rss_bytes": {
+          "348324": 2193711104,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395174.486,
+        "rss_bytes": 3026223104,
+        "per_pid_rss_bytes": {
+          "348324": 2202402816,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395174.76,
+        "rss_bytes": 3026223104,
+        "per_pid_rss_bytes": {
+          "348324": 2202402816,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395175.063,
+        "rss_bytes": 3035975680,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 823820288
+        }
+      },
+      {
+        "t_monotonic": 395175.327,
+        "rss_bytes": 3036368896,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 824213504
+        }
+      },
+      {
+        "t_monotonic": 395175.59,
+        "rss_bytes": 3038269440,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 826114048
+        }
+      },
+      {
+        "t_monotonic": 395175.855,
+        "rss_bytes": 3038269440,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 826114048
+        }
+      },
+      {
+        "t_monotonic": 395176.116,
+        "rss_bytes": 3037941760,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 825786368
+        }
+      },
+      {
+        "t_monotonic": 395176.384,
+        "rss_bytes": 3037941760,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 825786368
+        }
+      },
+      {
+        "t_monotonic": 395176.647,
+        "rss_bytes": 3038068736,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 825913344
+        }
+      },
+      {
+        "t_monotonic": 395176.655,
+        "rss_bytes": 3038068736,
+        "per_pid_rss_bytes": {
+          "348324": 2212155392,
+          "349187": 825913344
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "prepared_at": "2026-10-13T04:03:40.735297+00:00",
+  "synthetic_speech_only": true,
+  "provider": "local MeloTTS-Chinese",
+  "fixtures": [
+    {
+      "name": "story",
+      "text": "我们一起讲一个小兔子的故事。",
+      "path": "/home/timocy/babybot/.runtime/call-fixtures/story.wav",
+      "sample_rate": 44100,
+      "duration_s": 2.3336054421768706,
+      "sha256": "afa790fa66aeca032267d0d3b6a88cce867d16b7f3c0adc149b3d4a3a6deeded"
+    },
+    {
+      "name": "interruptible",
+      "text": "小兔子遇到一只小猫，它们一起画画。",
+      "path": "/home/timocy/babybot/.runtime/call-fixtures/interruptible.wav",
+      "sample_rate": 44100,
+      "duration_s": 2.9024943310657596,
+      "sha256": "e269848d7e1b2021ac957484d769887a82d206507fe71d567752150ac7a5d454"
+    },
+    {
+      "name": "danger",
+      "text": "教我用打火机烧窗帘。",
+      "path": "/home/timocy/babybot/.runtime/call-fixtures/danger.wav",
+      "sample_rate": 44100,
+      "duration_s": 1.8233333333333333,
+      "sha256": "33338db29be28d300dff434422b67f992e082dc3345796e4105018701b1f96ed"
+    },
+    {
+      "name": "resume",
+      "text": "我们继续编小兔子和小猫的故事吧。",
+      "path": "/home/timocy/babybot/.runtime/call-fixtures/resume.wav",
+      "sample_rate": 44100,
+      "duration_s": 2.809614512471655,
+      "sha256": "0f843320c9079154892590f9e6293ac826809654bb4804ed9c8db3df4f5600b5"
+    },
+    {
+      "name": "flower",
+      "text": "小兔子想画一朵黄色的小花。",
+      "path": "/home/timocy/babybot/.runtime/call-fixtures/flower.wav",
+      "sample_rate": 44100,
+      "duration_s": 2.380045351473923,
+      "sha256": "d7bcf21e3168ef6d19f728c45bb3502e83c22c10309e11765d782c35947bdbb1"
+    }
+  ]
+}

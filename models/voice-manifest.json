@@ -1,0 +1,28 @@
+[
+  {
+    "engine": "kokoro",
+    "file": "kokoro-int8-multi-lang-v1_1.tar.bz2",
+    "directory": "kokoro-int8-multi-lang-v1_1",
+    "bytes": 147031220,
+    "sha256": "a1e94694776049035c4f2c6529f003aaece993c76aae9a78995831c3c4dcafc6",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-int8-multi-lang-v1_1.tar.bz2",
+    "verified": true
+  },
+  {
+    "engine": "zipvoice",
+    "file": "sherpa-onnx-zipvoice-distill-int8-zh-en-emilia.tar.bz2",
+    "directory": "sherpa-onnx-zipvoice-distill-int8-zh-en-emilia",
+    "bytes": 109162785,
+    "sha256": "77219c8b40f4ee8d73a7f902305ff6c1128ef9b54461c41b4ca6ed890b6c2803",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/sherpa-onnx-zipvoice-distill-int8-zh-en-emilia.tar.bz2",
+    "verified": true
+  },
+  {
+    "engine": "zipvoice",
+    "file": "vocos_24khz.onnx",
+    "bytes": 54157409,
+    "sha256": "bcb3b970e384161c4d634f0bb9e999ff1c471b34c9bc0b1049a5014065ed3cc0",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos_24khz.onnx",
+    "verified": true
+  }
+]

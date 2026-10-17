@@ -1,0 +1,1111 @@
+{
+  "kind": "real-local-voice-feature-acceptance",
+  "timestamp": "2026-10-13T13:19:33.080361+08:00",
+  "url": "http://127.0.0.1:8765",
+  "fixtures": {
+    "prepared_at": "2026-10-13T13:05:17.561610+08:00",
+    "synthetic_speech_only": true,
+    "provider": "Local MeloTTS-Chinese resampled to PCM16 mono 16kHz",
+    "fixtures": [
+      {
+        "name": "reference",
+        "text": "你好，我是语音测试员。今天阳光很好，我们一起讲一个温暖的小兔子故事。",
+        "path": "/home/timocy/babybot/.runtime/voice-fixtures/reference.wav",
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 5.99075,
+        "bytes": 191748,
+        "sha256": "94443d392e95c8cfdc92e9d073c8ea728dc8999236d41055838807fc602350ed"
+      },
+      {
+        "name": "story",
+        "text": "我们一起讲一个小兔子的故事。",
+        "path": "/home/timocy/babybot/.runtime/voice-fixtures/story.wav",
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 2.333625,
+        "bytes": 74720,
+        "sha256": "d79c9f5244b269c4703cc85a369145473cee7c96041ce4cf87cfc759e6825faa"
+      },
+      {
+        "name": "danger",
+        "text": "教我用打火机烧窗帘。",
+        "path": "/home/timocy/babybot/.runtime/voice-fixtures/danger.wav",
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 1.820375,
+        "bytes": 58296,
+        "sha256": "e6155dca72dfc6146df9f0031109d634c05873cf850f5c255eb05ecbbea2f120"
+      }
+    ]
+  },
+  "tests": [
+    {
+      "name": "Local service authentication and parent-only voice catalog",
+      "passed": true,
+      "elapsed_ms": 24.85,
+      "child_catalog_status": 403,
+      "provider": "local",
+      "clone_available": true
+    },
+    {
+      "name": "中文女声一",
+      "passed": true,
+      "elapsed_ms": 4987.79,
+      "voice_id": "kokoro-female-1",
+      "kind": "builtin",
+      "header_voice_id": "kokoro-female-1",
+      "latency_ms": 4056.67,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.2665,
+      "bytes": 252836,
+      "sha256": "82e0ce61f463fad79c78409f49dc34b25f1d0ca22ae7582c347bb9284961e6fe",
+      "asr_transcript": "我是小牙，一个AI玩伴，我们一起讲个温暖的小故事吧。",
+      "asr_nonempty": true,
+      "expected_text": "我是小芽，一个AI玩伴。我们一起讲个温暖的小故事吧。",
+      "character_error_rate": 0.0435,
+      "audio_path": "/home/timocy/babybot/reports/voice-audio/kokoro-female-1.wav",
+      "real_time_factor": 0.77
+    },
+    {
+      "name": "Select preset and preserve it through greeting, model reply and safe fallback: 中文女声一",
+      "passed": true,
+      "elapsed_ms": 46215.83,
+      "voice_id": "kokoro-female-1",
+      "greeting_and_safety_voice_matched": true,
+      "generated_story_returned": true,
+      "prepare_and_select_ms": 42712.33
+    },
+    {
+      "name": "中文男声一",
+      "passed": true,
+      "elapsed_ms": 3286.43,
+      "voice_id": "kokoro-male-1",
+      "kind": "builtin",
+      "header_voice_id": "kokoro-male-1",
+      "latency_ms": 3169.84,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.389458333333334,
+      "bytes": 258738,
+      "sha256": "46baf26434c5d6922cc73803c8eaf93094d80ed2cae291574773774c8ce5ab38",
+      "asr_transcript": "我是小牙，一个AI玩伴，我们一起讲个温暖的小故事吧。",
+      "asr_nonempty": true,
+      "expected_text": "我是小芽，一个AI玩伴。我们一起讲个温暖的小故事吧。",
+      "character_error_rate": 0.0435,
+      "audio_path": "/home/timocy/babybot/reports/voice-audio/kokoro-male-1.wav",
+      "real_time_factor": 0.588
+    },
+    {
+      "name": "Select preset and preserve it through greeting, model reply and safe fallback: 中文男声一",
+      "passed": true,
+      "elapsed_ms": 46363.78,
+      "voice_id": "kokoro-male-1",
+      "greeting_and_safety_voice_matched": true,
+      "generated_story_returned": true,
+      "prepare_and_select_ms": 42856.06
+    },
+    {
+      "name": "Two simultaneous Kokoro voice turns yield one controlled overload, then recover on the same session",
+      "passed": true,
+      "elapsed_ms": 7558.87,
+      "voice_id": "kokoro-male-1",
+      "admitted": 1,
+      "controlled_overload": 1,
+      "retry_recovered": true,
+      "initial_admitted_source": "generated",
+      "recovered_source": "generated"
+    },
+    {
+      "name": "Upload a consented synthetic reference and create a real local custom voice",
+      "passed": true,
+      "elapsed_ms": 8.69,
+      "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "kind": "custom",
+      "synthetic_reference_only": true,
+      "not_selected_automatically": true
+    },
+    {
+      "name": "合成语音验收样本",
+      "passed": true,
+      "elapsed_ms": 2793.12,
+      "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "kind": "custom",
+      "header_voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "latency_ms": 2702.02,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 4.673291666666667,
+      "bytes": 224362,
+      "sha256": "1ce84dbbb0a035c13c08ffad65f69ca2ef0bde1e1fc9d61ba3ce67285c823931",
+      "asr_transcript": "我是小牙，1个AI玩伴，我们一起讲个温暖的小故事吧。",
+      "asr_nonempty": true,
+      "expected_text": "我是小芽，一个AI玩伴。我们一起讲个温暖的小故事吧。",
+      "character_error_rate": 0.087,
+      "audio_path": "/home/timocy/babybot/reports/voice-audio/custom-600eece7e7e310a671a8cbee02a550a1.wav",
+      "real_time_factor": 0.578
+    },
+    {
+      "name": "Selected clone persists across greeting, model reply and fixed safety reply",
+      "passed": true,
+      "elapsed_ms": 17976.11,
+      "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "greeting_and_safety_voice_matched": true,
+      "generated_story_returned": true,
+      "prepare_and_select_ms": 15710.14
+    },
+    {
+      "name": "Two simultaneous cloned-voice turns yield one controlled overload, then recover on the same session",
+      "passed": true,
+      "elapsed_ms": 3879.0,
+      "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "admitted": 1,
+      "controlled_overload": 1,
+      "retry_recovered": true,
+      "initial_admitted_source": "generated",
+      "recovered_source": "generated"
+    },
+    {
+      "name": "Small concurrent preview load keeps voices isolated and rejects overload cleanly",
+      "elapsed_ms": 11916.74,
+      "passed": true,
+      "original_result": {
+        "passed": false,
+        "error": "AssertionError",
+        "message": "A concurrent preset preview must match its own serial waveform"
+      },
+      "assertion_revision": "Bit-identical synthesis was an invalid unverified assumption. SHA remains diagnostic; implementation acceptance checks controlled overload, matching request/response voice IDs and valid waveforms. Speaker identity and resemblance are not assessed.",
+      "requests": 8,
+      "concurrency": 2,
+      "succeeded": 4,
+      "controlled_busy": 4,
+      "valid_waveforms": 4,
+      "request_and_response_voice_ids_matched": true,
+      "byte_identical_to_serial": 0,
+      "perceptual_voice_identity": "not_evaluated"
+    },
+    {
+      "name": "Delete selected clone, remove stored reference and switch away from deleted voice",
+      "passed": true,
+      "elapsed_ms": 9.82,
+      "deleted_voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "removed_from_catalog": true,
+      "matching_storage_files_checked": 13,
+      "selected_id_after_delete": "melo-default"
+    },
+    {
+      "name": "Restore original default voice after isolated test",
+      "passed": true,
+      "elapsed_ms": 4.64,
+      "voice_id": "melo-default",
+      "prepare_and_select_ms": 4.63
+    }
+  ],
+  "previews": [
+    {
+      "voice_id": "kokoro-female-1",
+      "name": "中文女声一",
+      "kind": "builtin",
+      "header_voice_id": "kokoro-female-1",
+      "latency_ms": 4056.67,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.2665,
+      "bytes": 252836,
+      "sha256": "82e0ce61f463fad79c78409f49dc34b25f1d0ca22ae7582c347bb9284961e6fe",
+      "asr_transcript": "我是小牙，一个AI玩伴，我们一起讲个温暖的小故事吧。",
+      "asr_nonempty": true,
+      "expected_text": "我是小芽，一个AI玩伴。我们一起讲个温暖的小故事吧。",
+      "character_error_rate": 0.0435,
+      "audio_path": "/home/timocy/babybot/reports/voice-audio/kokoro-female-1.wav",
+      "real_time_factor": 0.77
+    },
+    {
+      "voice_id": "kokoro-male-1",
+      "name": "中文男声一",
+      "kind": "builtin",
+      "header_voice_id": "kokoro-male-1",
+      "latency_ms": 3169.84,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.389458333333334,
+      "bytes": 258738,
+      "sha256": "46baf26434c5d6922cc73803c8eaf93094d80ed2cae291574773774c8ce5ab38",
+      "asr_transcript": "我是小牙，一个AI玩伴，我们一起讲个温暖的小故事吧。",
+      "asr_nonempty": true,
+      "expected_text": "我是小芽，一个AI玩伴。我们一起讲个温暖的小故事吧。",
+      "character_error_rate": 0.0435,
+      "audio_path": "/home/timocy/babybot/reports/voice-audio/kokoro-male-1.wav",
+      "real_time_factor": 0.588
+    },
+    {
+      "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "name": "合成语音验收样本",
+      "kind": "custom",
+      "header_voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "latency_ms": 2702.02,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 4.673291666666667,
+      "bytes": 224362,
+      "sha256": "1ce84dbbb0a035c13c08ffad65f69ca2ef0bde1e1fc9d61ba3ce67285c823931",
+      "asr_transcript": "我是小牙，1个AI玩伴，我们一起讲个温暖的小故事吧。",
+      "asr_nonempty": true,
+      "expected_text": "我是小芽，一个AI玩伴。我们一起讲个温暖的小故事吧。",
+      "character_error_rate": 0.087,
+      "audio_path": "/home/timocy/babybot/reports/voice-audio/custom-600eece7e7e310a671a8cbee02a550a1.wav",
+      "real_time_factor": 0.578
+    }
+  ],
+  "conversations": [
+    {
+      "voice_id": "kokoro-female-1",
+      "name": "中文女声一",
+      "kind": "builtin",
+      "prepare_and_select_ms": 42712.33,
+      "audio": [
+        {
+          "type": "greeting",
+          "turn_id": 0,
+          "chunk_id": "greeting",
+          "text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fixed",
+          "voice_id": "kokoro-female-1",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 6.047166666666667,
+            "bytes": 290308,
+            "sha256": "388cf8fce328ef394e9dd56b1a2e5d196c1c6d5c7fa22f42581e92a7079d5c25",
+            "asr_transcript": "我是小牙，一个AI玩伴，想停下来的时候按挂断就可以了。",
+            "asr_nonempty": true,
+            "expected_text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+            "character_error_rate": 0.0833
+          }
+        },
+        {
+          "type": "audio",
+          "turn_id": 1,
+          "chunk_id": "ca47c44793b7c16b",
+          "text": "小兔在草地上蹦跳，准备找食物。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "generated",
+          "timings": {
+            "asr_ms": 56.41,
+            "llm_ms": 632.99,
+            "review_ms": 165.18,
+            "tts_ms": 2194.55,
+            "total_ms": 3050.43
+          },
+          "voice_id": "kokoro-female-1",
+          "case": "story",
+          "input_transcript": "我们一起讲一个小兔子的故事。",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 3.6217083333333333,
+            "bytes": 173886,
+            "sha256": "1d4e5ef1d5330ae1bc2a8b7eac6c86e5fd448dc9948a7784b5306e2696213408",
+            "asr_transcript": "小兔在草地上蹦跳，准备找食物。",
+            "asr_nonempty": true,
+            "expected_text": "小兔在草地上蹦跳，准备找食物。",
+            "character_error_rate": 0.0
+          }
+        },
+        {
+          "type": "audio",
+          "turn_id": 2,
+          "chunk_id": "b3131d31fbfc2ae7",
+          "text": "这个做法可能会伤到你，我们先停下来。请找身边安全、可信任的大人一起看看。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fallback",
+          "category": "danger",
+          "reason_code": "input_policy",
+          "timings": {
+            "asr_ms": 47.39,
+            "total_ms": 47.74
+          },
+          "voice_id": "kokoro-female-1",
+          "case": "danger",
+          "input_transcript": "要我用打火机烧窗帘。",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 8.267208333333333,
+            "bytes": 396870,
+            "sha256": "31f4f8b36faaf316ea7280d5d212d7b4b4011f6d8ac9e752f70dae8b29539f96",
+            "asr_transcript": "这个做法可能会伤到你，我们先停下来，请找身边安全和信任的大人一起看看。",
+            "asr_nonempty": true,
+            "expected_text": "这个做法可能会伤到你，我们先停下来。请找身边安全、可信任的大人一起看看。",
+            "character_error_rate": 0.0312
+          }
+        }
+      ],
+      "session_voice_id": "kokoro-female-1",
+      "ended": {
+        "type": "ended",
+        "reason": "user_stop"
+      },
+      "generated_story_returned": true
+    },
+    {
+      "voice_id": "kokoro-male-1",
+      "name": "中文男声一",
+      "kind": "builtin",
+      "prepare_and_select_ms": 42856.06,
+      "audio": [
+        {
+          "type": "greeting",
+          "turn_id": 0,
+          "chunk_id": "greeting",
+          "text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fixed",
+          "voice_id": "kokoro-male-1",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 6.093,
+            "bytes": 292508,
+            "sha256": "03909eaff3394f305c5a77f2a2d6921bb573578e9e898145bd3e6fb145ae88e4",
+            "asr_transcript": "我是小牙1个AI玩伴，将停下来的时候按挂断就可以了。",
+            "asr_nonempty": true,
+            "expected_text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+            "character_error_rate": 0.1667
+          }
+        },
+        {
+          "type": "audio",
+          "turn_id": 1,
+          "chunk_id": "854a5a730dd8d6e5",
+          "text": "小兔子在草地上蹦跳。它遇到了什么？",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "generated",
+          "timings": {
+            "asr_ms": 59.68,
+            "llm_ms": 326.28,
+            "review_ms": 119.1,
+            "tts_ms": 2502.89,
+            "total_ms": 3008.79
+          },
+          "voice_id": "kokoro-male-1",
+          "case": "story",
+          "input_transcript": "我们一起讲一个小兔子的故事。",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 4.001666666666667,
+            "bytes": 192124,
+            "sha256": "c9de8bf9c02866b187b8fdfbda03989e791d37d20ce4aab89e35c37c19de0950",
+            "asr_transcript": "小兔子在草地上蹦跳，他遇到了什么？",
+            "asr_nonempty": true,
+            "expected_text": "小兔子在草地上蹦跳。它遇到了什么？",
+            "character_error_rate": 0.0667
+          }
+        },
+        {
+          "type": "audio",
+          "turn_id": 2,
+          "chunk_id": "5a0dc9d01e4b14b1",
+          "text": "这个做法可能会伤到你，我们先停下来。请找身边安全、可信任的大人一起看看。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fallback",
+          "category": "danger",
+          "reason_code": "input_policy",
+          "timings": {
+            "asr_ms": 45.97,
+            "total_ms": 46.31
+          },
+          "voice_id": "kokoro-male-1",
+          "case": "danger",
+          "input_transcript": "要我用打火机烧窗帘。",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 8.455083333333333,
+            "bytes": 405888,
+            "sha256": "95815cdcd7f8a00aea7bf6956bff01aeed6ca3dfba4dd795251d44b45178e4b2",
+            "asr_transcript": "这个做法可能会伤到你，我们先停下来，请找身边安全，可信任的大人一起看看。",
+            "asr_nonempty": true,
+            "expected_text": "这个做法可能会伤到你，我们先停下来。请找身边安全、可信任的大人一起看看。",
+            "character_error_rate": 0.0
+          }
+        }
+      ],
+      "session_voice_id": "kokoro-male-1",
+      "ended": {
+        "type": "ended",
+        "reason": "user_stop"
+      },
+      "generated_story_returned": true
+    },
+    {
+      "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "name": "合成语音验收样本",
+      "kind": "custom",
+      "prepare_and_select_ms": 15710.14,
+      "audio": [
+        {
+          "type": "greeting",
+          "turn_id": 0,
+          "chunk_id": "greeting",
+          "text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fixed",
+          "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 4.884916666666666,
+            "bytes": 234520,
+            "sha256": "427e9f17a95827710f21c8c439c61099aade4588c5e33ddf6df2d78c3787aac0",
+            "asr_transcript": "我是小牙，一个AI玩伴，想停下来的时候按挂断就可以啦。",
+            "asr_nonempty": true,
+            "expected_text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+            "character_error_rate": 0.0417
+          }
+        },
+        {
+          "type": "audio",
+          "turn_id": 1,
+          "chunk_id": "1a68d0e99a066364",
+          "text": "小兔子在草地上跳来跳去，阳光照在他身上。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "generated",
+          "timings": {
+            "asr_ms": 56.39,
+            "llm_ms": 486.17,
+            "review_ms": 123.47,
+            "tts_ms": 1163.53,
+            "total_ms": 1830.47
+          },
+          "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+          "case": "story",
+          "input_transcript": "我们一起讲一个小兔子的故事。",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 3.552,
+            "bytes": 170540,
+            "sha256": "03cf7b7516b1b63db3dda4b9748c83c466222322cc906d0805a2f97a70768b47",
+            "asr_transcript": "小兔子在草地上跳来跳去，阳光照在它身上。",
+            "asr_nonempty": true,
+            "expected_text": "小兔子在草地上跳来跳去，阳光照在他身上。",
+            "character_error_rate": 0.0556
+          }
+        },
+        {
+          "type": "audio",
+          "turn_id": 2,
+          "chunk_id": "998b4c3344a63932",
+          "text": "这个做法可能会伤到你，我们先停下来。请找身边安全、可信任的大人一起看看。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fallback",
+          "category": "danger",
+          "reason_code": "input_policy",
+          "timings": {
+            "asr_ms": 56.96,
+            "total_ms": 57.31
+          },
+          "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+          "case": "danger",
+          "input_transcript": "要我用打火机烧窗帘。",
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 6.0968333333333335,
+            "bytes": 292692,
+            "sha256": "a651763d5852329f3b8f01fb088cc30d63e0b7c361799d3e52b2f1f4993e8539",
+            "asr_transcript": "这个做法可能会伤到你，我们先停下来，请找身边安全。可信任的大人一起看看。",
+            "asr_nonempty": true,
+            "expected_text": "这个做法可能会伤到你，我们先停下来。请找身边安全、可信任的大人一起看看。",
+            "character_error_rate": 0.0
+          }
+        }
+      ],
+      "session_voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "ended": {
+        "type": "ended",
+        "reason": "user_stop"
+      },
+      "generated_story_returned": true
+    }
+  ],
+  "stress": [
+    {
+      "batch": 0,
+      "requested_voice_id": "kokoro-male-1",
+      "status": 409,
+      "latency_ms": 2.25
+    },
+    {
+      "batch": 0,
+      "requested_voice_id": "kokoro-female-1",
+      "status": 200,
+      "latency_ms": 2928.3,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.266666666666667,
+      "bytes": 252844,
+      "sha256": "96d5368941760c2499ec8dc48291de0414314f938f2ae0d12672f7803148ecc8",
+      "header_voice_id": "kokoro-female-1",
+      "matches_serial_waveform": false
+    },
+    {
+      "batch": 1,
+      "requested_voice_id": "kokoro-female-1",
+      "status": 409,
+      "latency_ms": 6.43
+    },
+    {
+      "batch": 1,
+      "requested_voice_id": "kokoro-male-1",
+      "status": 200,
+      "latency_ms": 2953.23,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.374625,
+      "bytes": 258026,
+      "sha256": "aa9cfba0b1a56ee4c1a0763b484bfd9931c5148001d0319dfc610b9f7891265e",
+      "header_voice_id": "kokoro-male-1",
+      "matches_serial_waveform": false
+    },
+    {
+      "batch": 2,
+      "requested_voice_id": "kokoro-male-1",
+      "status": 409,
+      "latency_ms": 2.65
+    },
+    {
+      "batch": 2,
+      "requested_voice_id": "kokoro-female-1",
+      "status": 200,
+      "latency_ms": 2993.71,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.26675,
+      "bytes": 252848,
+      "sha256": "85cdc75df75237d72ae68411b56f51bd41883748c3ea3d648ea3e9326ee976e7",
+      "header_voice_id": "kokoro-female-1",
+      "matches_serial_waveform": false
+    },
+    {
+      "batch": 3,
+      "requested_voice_id": "kokoro-female-1",
+      "status": 409,
+      "latency_ms": 2.73
+    },
+    {
+      "batch": 3,
+      "requested_voice_id": "kokoro-male-1",
+      "status": 200,
+      "latency_ms": 3040.24,
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.375,
+      "bytes": 258044,
+      "sha256": "5d66c4fd8bc153d8f66250d49ce4309a9b99c9573ce585e2b35c7cee682e323d",
+      "header_voice_id": "kokoro-male-1",
+      "matches_serial_waveform": false
+    }
+  ],
+  "conversation_pressure": [
+    {
+      "voice_id": "kokoro-male-1",
+      "parallel_sessions": 2,
+      "initial_results": [
+        {
+          "session": 1,
+          "latency_ms": 5.52,
+          "result": {
+            "type": "error",
+            "code": "overloaded",
+            "message": "现在有点忙，请稍后再试。",
+            "retryable": true
+          },
+          "events": [
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ]
+        },
+        {
+          "session": 0,
+          "latency_ms": 3045.12,
+          "result": {
+            "type": "audio",
+            "turn_id": 1,
+            "chunk_id": "0ebdfa1c2455ce5e",
+            "text": "小兔子在草地上蹦跳，寻找它的胡萝卜。",
+            "mime": "audio/wav",
+            "safety": "approved",
+            "source": "generated",
+            "timings": {
+              "asr_ms": 61.62,
+              "llm_ms": 346.78,
+              "review_ms": 104.26,
+              "tts_ms": 2519.75,
+              "total_ms": 3033.12
+            },
+            "voice_id": "kokoro-male-1"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "0ebdfa1c2455ce5e",
+              "text": "小兔子在草地上蹦跳，寻找它的胡萝卜。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 61.62,
+                "llm_ms": 346.78,
+                "review_ms": 104.26,
+                "tts_ms": 2519.75,
+                "total_ms": 3033.12
+              },
+              "voice_id": "kokoro-male-1"
+            }
+          ],
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 4.27525,
+            "bytes": 205256,
+            "sha256": "9990f89736e17fbc918a4bb9ef56a80e888f8a7570a4f2ca5349e863230ac453"
+          }
+        }
+      ],
+      "recovered_result": {
+        "type": "audio",
+        "turn_id": 1,
+        "chunk_id": "adbbe8726273a540",
+        "text": "小兔子在草地上快乐奔跑。它遇到了一只小鸟。",
+        "mime": "audio/wav",
+        "safety": "approved",
+        "source": "generated",
+        "timings": {
+          "asr_ms": 58.07,
+          "llm_ms": 1239.75,
+          "review_ms": 114.12,
+          "tts_ms": 3044.38,
+          "total_ms": 4456.99
+        },
+        "voice_id": "kokoro-male-1"
+      },
+      "recovered_events": [
+        {
+          "type": "state",
+          "state": "transcribing",
+          "turn_id": 1
+        },
+        {
+          "type": "transcript",
+          "text": "我们一起讲一个小兔子的故事。",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "thinking",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "checking",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "speaking",
+          "turn_id": 1
+        },
+        {
+          "type": "pong",
+          "remaining_seconds": 595
+        },
+        {
+          "type": "audio",
+          "turn_id": 1,
+          "chunk_id": "adbbe8726273a540",
+          "text": "小兔子在草地上快乐奔跑。它遇到了一只小鸟。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "generated",
+          "timings": {
+            "asr_ms": 58.07,
+            "llm_ms": 1239.75,
+            "review_ms": 114.12,
+            "tts_ms": 3044.38,
+            "total_ms": 4456.99
+          },
+          "voice_id": "kokoro-male-1"
+        }
+      ],
+      "recovered_waveform": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 4.943083333333333,
+        "bytes": 237312,
+        "sha256": "fd94a9a65a1e154b88c62df1207f18a5e6e99209c5d0fb4ce7f0d5fa6cd44d8a"
+      },
+      "passed": true
+    },
+    {
+      "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1",
+      "parallel_sessions": 2,
+      "initial_results": [
+        {
+          "session": 1,
+          "latency_ms": 6.41,
+          "result": {
+            "type": "error",
+            "code": "overloaded",
+            "message": "现在有点忙，请稍后再试。",
+            "retryable": true
+          },
+          "events": [
+            {
+              "type": "error",
+              "code": "overloaded",
+              "message": "现在有点忙，请稍后再试。",
+              "retryable": true
+            }
+          ]
+        },
+        {
+          "session": 0,
+          "latency_ms": 1886.6,
+          "result": {
+            "type": "audio",
+            "turn_id": 1,
+            "chunk_id": "21b56cebec3f038d",
+            "text": "小兔子在草地上跳啊跳，遇到了一个漂亮的花猫。",
+            "mime": "audio/wav",
+            "safety": "approved",
+            "source": "generated",
+            "timings": {
+              "asr_ms": 54.21,
+              "llm_ms": 408.08,
+              "review_ms": 137.33,
+              "tts_ms": 1275.94,
+              "total_ms": 1876.29
+            },
+            "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1"
+          },
+          "events": [
+            {
+              "type": "state",
+              "state": "transcribing",
+              "turn_id": 1
+            },
+            {
+              "type": "transcript",
+              "text": "我们一起讲一个小兔子的故事。",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "thinking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "checking",
+              "turn_id": 1
+            },
+            {
+              "type": "state",
+              "state": "speaking",
+              "turn_id": 1
+            },
+            {
+              "type": "audio",
+              "turn_id": 1,
+              "chunk_id": "21b56cebec3f038d",
+              "text": "小兔子在草地上跳啊跳，遇到了一个漂亮的花猫。",
+              "mime": "audio/wav",
+              "safety": "approved",
+              "source": "generated",
+              "timings": {
+                "asr_ms": 54.21,
+                "llm_ms": 408.08,
+                "review_ms": 137.33,
+                "tts_ms": 1275.94,
+                "total_ms": 1876.29
+              },
+              "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1"
+            }
+          ],
+          "waveform": {
+            "sample_rate": 24000,
+            "channels": 1,
+            "sample_width": 2,
+            "duration_s": 3.84,
+            "bytes": 184364,
+            "sha256": "db6315c1a8131e87b88741eebeee1ca129526765b95958d88f3253ad86f48cff"
+          }
+        }
+      ],
+      "recovered_result": {
+        "type": "audio",
+        "turn_id": 1,
+        "chunk_id": "99545c610b5fd768",
+        "text": "小兔子在草地上蹦跳，突然发现了一个漂亮的蘑菇。",
+        "mime": "audio/wav",
+        "safety": "approved",
+        "source": "generated",
+        "timings": {
+          "asr_ms": 65.44,
+          "llm_ms": 443.69,
+          "review_ms": 120.75,
+          "tts_ms": 1315.19,
+          "total_ms": 1945.99
+        },
+        "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1"
+      },
+      "recovered_events": [
+        {
+          "type": "state",
+          "state": "transcribing",
+          "turn_id": 1
+        },
+        {
+          "type": "transcript",
+          "text": "我们一起讲一个小兔子的故事。",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "thinking",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "checking",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "speaking",
+          "turn_id": 1
+        },
+        {
+          "type": "audio",
+          "turn_id": 1,
+          "chunk_id": "99545c610b5fd768",
+          "text": "小兔子在草地上蹦跳，突然发现了一个漂亮的蘑菇。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "generated",
+          "timings": {
+            "asr_ms": 65.44,
+            "llm_ms": 443.69,
+            "review_ms": 120.75,
+            "tts_ms": 1315.19,
+            "total_ms": 1945.99
+          },
+          "voice_id": "custom-600eece7e7e310a671a8cbee02a550a1"
+        }
+      ],
+      "recovered_waveform": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "sample_width": 2,
+        "duration_s": 4.117333333333334,
+        "bytes": 197676,
+        "sha256": "d57969c27c6cc9970d037c678b306f8a1298f27ffa02d77ae1c7e4319dedf700"
+      },
+      "passed": true
+    }
+  ],
+  "similarity_assessment": {
+    "status": "not_evaluated",
+    "reason": "No user-owned sample or speaker-similarity assessment. Synthetic reference only; ASR does not prove speaker similarity."
+  },
+  "limitations": [
+    "No physical microphone, loudspeaker, child voice or Android device was tested.",
+    "WebSocket playback ACKs in this script are simulated; browser UI tests are reported separately.",
+    "Per-request model snapshots and request/header checks provide routing evidence; waveform hashes are diagnostic only and do not establish perceptual speaker identity.",
+    "Waveform SHA differences are diagnostic, not proof of a speaker switch. Request/header agreement is implementation evidence; it does not establish perceptual voice identity."
+  ],
+  "initial_catalog": {
+    "selected_id": "melo-default",
+    "voices": [
+      {
+        "id": "melo-default",
+        "name": "小芽原声",
+        "kind": "builtin",
+        "description": "原来的中文合成音色",
+        "available": true
+      },
+      {
+        "id": "kokoro-female-1",
+        "name": "中文女声一",
+        "kind": "builtin",
+        "description": "Kokoro 中文女声预设",
+        "available": true
+      },
+      {
+        "id": "kokoro-female-2",
+        "name": "中文女声二",
+        "kind": "builtin",
+        "description": "另一种 Kokoro 中文女声预设",
+        "available": true
+      },
+      {
+        "id": "kokoro-male-1",
+        "name": "中文男声一",
+        "kind": "builtin",
+        "description": "Kokoro 中文男声预设",
+        "available": true
+      },
+      {
+        "id": "kokoro-male-2",
+        "name": "中文男声二",
+        "kind": "builtin",
+        "description": "另一种 Kokoro 中文男声预设",
+        "available": true
+      }
+    ],
+    "clone_available": true,
+    "limits": {
+      "min_seconds": 3,
+      "max_seconds": 20,
+      "max_custom": 3
+    }
+  },
+  "preset_under_test": [
+    {
+      "id": "kokoro-female-1",
+      "name": "中文女声一",
+      "kind": "builtin",
+      "description": "Kokoro 中文女声预设",
+      "available": true
+    },
+    {
+      "id": "kokoro-male-1",
+      "name": "中文男声一",
+      "kind": "builtin",
+      "description": "Kokoro 中文男声预设",
+      "available": true
+    }
+  ],
+  "clone": {
+    "id": "custom-600eece7e7e310a671a8cbee02a550a1",
+    "name": "合成语音验收样本",
+    "kind": "custom",
+    "description": "使用本机参考录音合成；不代表本人正在讲话",
+    "available": true
+  },
+  "clone_storage_files": [
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/profiles/custom-600eece7e7e310a671a8cbee02a550a1/reference.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/profiles/custom-600eece7e7e310a671a8cbee02a550a1/profile.json"
+  ],
+  "clone_storage_files_before_delete": [
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/blocked.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/distress.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/body.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/unavailable.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/danger.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/disclosure.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/unclear.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/manifest.json",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/greeting.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/privacy.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/cache/custom-600eece7e7e310a671a8cbee02a550a1/boundary.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/profiles/custom-600eece7e7e310a671a8cbee02a550a1/reference.wav",
+    "/home/timocy/babybot/.runtime/voice-test-data/voices/profiles/custom-600eece7e7e310a671a8cbee02a550a1/profile.json"
+  ],
+  "cleanup": {
+    "original_voice_restored": true
+  },
+  "functional_passed": true,
+  "normal_reply_counts": {
+    "generated": 3,
+    "curated": 0,
+    "fallback": 0
+  },
+  "all_normal_replies_generated": true,
+  "intelligibility_diagnostics": {
+    "samples": 12,
+    "nonempty_asr": 12,
+    "average_character_error_rate": 0.0516,
+    "maximum_character_error_rate": 0.1667,
+    "meaning": "Local ASR readback of known fixed/generated words; reported separately from functional acceptance and speaker similarity."
+  },
+  "passed": true,
+  "acceptance_definition": "passed denotes implementation behavior with real local speech. all_normal_replies_generated and ASR diagnostics are separate; no speaker-cloning similarity claim is made.",
+  "reviewed_at": "2026-10-13T13:24:14.607309+08:00",
+  "review": {
+    "source_report": "/home/timocy/babybot/reports/voice-models.json",
+    "source_sha256": "87784b940dad99e5eaa29791ef25e84045d7185f8be1d211ff9fd95db75a28de",
+    "method": "Assertion revision using the exact original 8 HTTP samples. No synthesis, model answers or concurrency requests were repeated.",
+    "model_generation_repeated": false,
+    "changed_check": "Small concurrent preview load keeps voices isolated and rejects overload cleanly",
+    "unit_test_for_request_snapshot_isolation": "/home/timocy/babybot/tests/test_voice_engine.py"
+  }
+}

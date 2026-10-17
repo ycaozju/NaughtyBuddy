@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-10-13T03:13:52.206Z",
+  "base": "http://127.0.0.1:8765",
+  "browser": "Chromium headless",
+  "microphone": "File-backed virtual microphone; synthetic adult Mandarin speech",
+  "tests": [
+    {
+      "name": "Desktop landing page renders without horizontal overflow",
+      "passed": true,
+      "elapsed_ms": 67
+    },
+    {
+      "name": "390px mobile view has no horizontal overflow and retains usable controls",
+      "passed": true,
+      "elapsed_ms": 91
+    },
+    {
+      "name": "Family login, parent unlock, fixed preferences, settings save and relock",
+      "passed": true,
+      "elapsed_ms": 539
+    },
+    {
+      "name": "Start obtains real browser microphone tracks and Stop ends every track",
+      "passed": true,
+      "elapsed_ms": 182,
+      "physical_microphone": false,
+      "native_getUserMedia": true,
+      "click_to_all_tracks_ended_ms": 0.9000000357627869,
+      "all_states_ended": true,
+      "timing_definition": "DOM click capture to native MediaStreamTrack.stop return with readyState ended; excludes physical device shutdown latency"
+    },
+    {
+      "name": "File-backed microphone traverses native capture, VAD, real ASR, LLM, review and audio playback",
+      "passed": true,
+      "elapsed_ms": 81140,
+      "pcm_bytes": 119680,
+      "transcript": "我们一起讲一个小兔子的故事。",
+      "reply": "小兔在森林里散步，突然发现了一个神奇的洞穴。洞穴的尽头有一块闪烁发光的宝石，它散发着柔和的光芒，好像能照耀黑暗。",
+      "source": "generated",
+      "pcm_send_to_audio_start_ms": 4028.399999976158,
+      "timing_definition": "WebSocket binary PCM send to matching non-greeting AudioBufferSourceNode.start invocation; excludes VAD silence wait and speaker hardware latency",
+      "context_base_latency_s": 0.0106875
+    },
+    {
+      "name": "No JavaScript, console or Content Security Policy errors",
+      "passed": true,
+      "elapsed_ms": 1
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "csp_violations": [],
+  "limitations": [
+    "No physical Android device, real child voice, room acoustics or speaker echo cancellation was tested."
+  ],
+  "provider": "local",
+  "passed": true
+}

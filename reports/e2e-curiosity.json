@@ -1,0 +1,128 @@
+{
+  "kind": "real-local-model-e2e",
+  "synthetic_speech_only": true,
+  "started_at": "2026-10-13T11:09:59.907842+08:00",
+  "server_health": {
+    "status": "ok",
+    "provider": "local",
+    "backend": "local",
+    "version": "0.1.0"
+  },
+  "url": "http://127.0.0.1:8765",
+  "cases": [
+    {
+      "case": "curiosity",
+      "mode": "curiosity",
+      "synthetic_utterance": "为什么会下雨？",
+      "input_audio_s": 1.196,
+      "case_elapsed_ms": 1416.25,
+      "ok": true,
+      "latency_ms": 945.09,
+      "elapsed_ms": 958.59,
+      "transcript": "为什么会下雨？",
+      "reply": "因为云朵里藏着水珠。",
+      "source": "generated",
+      "safety": "approved",
+      "category": null,
+      "timings": {
+        "asr_ms": 75.59,
+        "llm_ms": 353.19,
+        "review_ms": 141.84,
+        "tts_ms": 341.84,
+        "total_ms": 913.32
+      },
+      "audio_duration_s": 1.846,
+      "ended": {
+        "type": "ended",
+        "reason": "user_stop"
+      },
+      "events": [
+        {
+          "type": "state",
+          "state": "listening",
+          "turn_id": 0
+        },
+        {
+          "type": "greeting",
+          "turn_id": 0,
+          "chunk_id": "greeting",
+          "text": "我是小芽，一个AI玩伴。想停下来的时候，按结束就可以啦。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fixed"
+        },
+        {
+          "type": "state",
+          "state": "transcribing",
+          "turn_id": 1
+        },
+        {
+          "type": "transcript",
+          "text": "为什么会下雨？",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "thinking",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "checking",
+          "turn_id": 1
+        },
+        {
+          "type": "state",
+          "state": "speaking",
+          "turn_id": 1
+        },
+        {
+          "type": "audio",
+          "turn_id": 1,
+          "chunk_id": "5abe0dfba982365a",
+          "text": "因为云朵里藏着水珠。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "generated",
+          "timings": {
+            "asr_ms": 75.59,
+            "llm_ms": 353.19,
+            "review_ms": 141.84,
+            "tts_ms": 341.84,
+            "total_ms": 913.32
+          }
+        }
+      ],
+      "output_asr": "因为云朵里藏着水珠。",
+      "checks": {
+        "input_transcribed": true,
+        "input_intent_preserved": true,
+        "reply_present": true,
+        "expected_source": true,
+        "output_transcribed": true,
+        "safety_approved": true,
+        "all_stages_measured": true
+      },
+      "input_character_error_rate": 0.0,
+      "output_character_error_rate": 0.0
+    }
+  ],
+  "limitations": [
+    "No physical Android/iOS microphone or child-voice validation",
+    "Playback acknowledgement is simulated by the test client; audible device playback is not tested",
+    "Output ASR checks a nonempty waveform transcription, not semantic safety proof"
+  ],
+  "local_model_health": {
+    "local_only": true,
+    "llm": true,
+    "asr": true,
+    "tts": true,
+    "models": {
+      "llm": "Qwen2.5-1.5B-Instruct-Q4_K_M",
+      "asr": "SenseVoiceSmall-int8",
+      "tts": "MeloTTS-Chinese"
+    },
+    "ok": true
+  },
+  "passed": true
+}

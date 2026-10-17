@@ -1,0 +1,252 @@
+{
+  "timestamp": "2026-10-13T03:16:33.285Z",
+  "base": "http://127.0.0.1:8765",
+  "browser": "Chromium headless",
+  "microphone": "File-backed virtual microphone; synthetic adult Mandarin speech",
+  "tests": [
+    {
+      "name": "Desktop landing page renders without horizontal overflow",
+      "passed": true,
+      "elapsed_ms": 81
+    },
+    {
+      "name": "390px mobile view has no horizontal overflow and retains usable controls",
+      "passed": true,
+      "elapsed_ms": 96
+    },
+    {
+      "name": "Family login, parent unlock, fixed preferences, settings save and relock",
+      "passed": true,
+      "elapsed_ms": 459
+    },
+    {
+      "name": "File-backed microphone traverses native capture, VAD, real ASR, LLM, review and audio playback",
+      "passed": true,
+      "elapsed_ms": 73469,
+      "pcm_bytes": 119680,
+      "transcript": "我们一起讲一个小兔子的故事。",
+      "reply": "好的，我们开始吧！小兔子住在一片绿油油的草地上。",
+      "source": "generated",
+      "event_timeline": {
+        "sent": [
+          {
+            "type": "start",
+            "time": 1336.8999999761581
+          },
+          {
+            "type": "played",
+            "time": 6200,
+            "chunk_id": "greeting"
+          },
+          {
+            "type": "ping",
+            "time": 6337.5
+          },
+          {
+            "type": "ping",
+            "time": 11337.399999976158
+          },
+          {
+            "type": "ping",
+            "time": 16337.399999976158
+          },
+          {
+            "type": "ping",
+            "time": 21338.099999964237
+          },
+          {
+            "type": "ping",
+            "time": 26337.599999964237
+          },
+          {
+            "type": "ping",
+            "time": 31337.69999998808
+          },
+          {
+            "type": "ping",
+            "time": 36337.59999996424
+          },
+          {
+            "type": "ping",
+            "time": 41337.5
+          },
+          {
+            "type": "ping",
+            "time": 46337.39999997616
+          },
+          {
+            "type": "ping",
+            "time": 51337.39999997616
+          },
+          {
+            "type": "ping",
+            "time": 56337.39999997616
+          },
+          {
+            "type": "ping",
+            "time": 61337.39999997616
+          },
+          {
+            "type": "ping",
+            "time": 66337.39999997616
+          },
+          {
+            "type": "pcm",
+            "time": 68312.59999996424,
+            "bytes": 119680
+          },
+          {
+            "type": "ping",
+            "time": 71337.39999997616
+          },
+          {
+            "type": "played",
+            "time": 74680.30000001192,
+            "chunk_id": "2f78739d92704ce6"
+          }
+        ],
+        "received": [
+          {
+            "type": "session_started",
+            "time": 1337.199999988079
+          },
+          {
+            "type": "state",
+            "time": 1337.5,
+            "turn_id": 0
+          },
+          {
+            "type": "greeting",
+            "time": 1357,
+            "turn_id": 0,
+            "source": "fixed"
+          },
+          {
+            "type": "pong",
+            "time": 6339.399999976158
+          },
+          {
+            "type": "pong",
+            "time": 11338.899999976158
+          },
+          {
+            "type": "pong",
+            "time": 16338.099999964237
+          },
+          {
+            "type": "pong",
+            "time": 21338.899999976158
+          },
+          {
+            "type": "pong",
+            "time": 26338.5
+          },
+          {
+            "type": "pong",
+            "time": 31338.5
+          },
+          {
+            "type": "pong",
+            "time": 36338.39999997616
+          },
+          {
+            "type": "pong",
+            "time": 41337.89999997616
+          },
+          {
+            "type": "pong",
+            "time": 46338.30000001192
+          },
+          {
+            "type": "pong",
+            "time": 51338
+          },
+          {
+            "type": "pong",
+            "time": 56338.09999996424
+          },
+          {
+            "type": "pong",
+            "time": 61337.80000001192
+          },
+          {
+            "type": "pong",
+            "time": 66338
+          },
+          {
+            "type": "state",
+            "time": 68315,
+            "turn_id": 1
+          },
+          {
+            "type": "transcript",
+            "time": 68382.80000001192,
+            "turn_id": 1
+          },
+          {
+            "type": "state",
+            "time": 68383.59999996424,
+            "turn_id": 1
+          },
+          {
+            "type": "state",
+            "time": 69590.39999997616,
+            "turn_id": 1
+          },
+          {
+            "type": "state",
+            "time": 69731.89999997616,
+            "turn_id": 1
+          },
+          {
+            "type": "audio",
+            "time": 70406.09999996424,
+            "turn_id": 1,
+            "source": "generated"
+          },
+          {
+            "type": "pong",
+            "time": 71338.59999996424
+          },
+          {
+            "type": "state",
+            "time": 74681,
+            "turn_id": 1
+          }
+        ],
+        "playback": [
+          {
+            "time": 1386.199999988079,
+            "turn_id": 0,
+            "type": "greeting",
+            "source": "fixed",
+            "context_base_latency_s": 0.0106875
+          },
+          {
+            "time": 70432.89999997616,
+            "turn_id": 1,
+            "type": "audio",
+            "source": "generated",
+            "context_base_latency_s": 0.0106875
+          }
+        ]
+      },
+      "pcm_send_to_audio_start_ms": 2120.300000011921,
+      "timing_definition": "WebSocket binary PCM send to matching non-greeting AudioBufferSourceNode.start invocation; excludes VAD silence wait and speaker hardware latency",
+      "context_base_latency_s": 0.0106875
+    },
+    {
+      "name": "No JavaScript, console or Content Security Policy errors",
+      "passed": true,
+      "elapsed_ms": 0
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "csp_violations": [],
+  "limitations": [
+    "No physical Android device, real child voice, room acoustics or speaker echo cancellation was tested."
+  ],
+  "provider": "local",
+  "passed": true
+}

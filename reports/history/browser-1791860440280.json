@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-13T02:58:40.154Z",
+  "base": "http://127.0.0.1:8765",
+  "browser": "Chromium headless",
+  "microphone": "Silent virtual microphone",
+  "tests": [],
+  "console_errors": [],
+  "page_errors": [],
+  "csp_violations": [],
+  "limitations": [
+    "No physical Android device, real child voice, room acoustics or speaker echo cancellation was tested."
+  ],
+  "passed": false,
+  "failure": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8765/\", waiting until \"networkidle\"\u001b[22m\n"
+}

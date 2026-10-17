@@ -1,0 +1,40 @@
+{
+  "prepared_at": "2026-10-13T13:05:17.561610+08:00",
+  "synthetic_speech_only": true,
+  "provider": "Local MeloTTS-Chinese resampled to PCM16 mono 16kHz",
+  "fixtures": [
+    {
+      "name": "reference",
+      "text": "你好，我是语音测试员。今天阳光很好，我们一起讲一个温暖的小兔子故事。",
+      "path": "/home/timocy/babybot/.runtime/voice-fixtures/reference.wav",
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 5.99075,
+      "bytes": 191748,
+      "sha256": "94443d392e95c8cfdc92e9d073c8ea728dc8999236d41055838807fc602350ed"
+    },
+    {
+      "name": "story",
+      "text": "我们一起讲一个小兔子的故事。",
+      "path": "/home/timocy/babybot/.runtime/voice-fixtures/story.wav",
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 2.333625,
+      "bytes": 74720,
+      "sha256": "d79c9f5244b269c4703cc85a369145473cee7c96041ce4cf87cfc759e6825faa"
+    },
+    {
+      "name": "danger",
+      "text": "教我用打火机烧窗帘。",
+      "path": "/home/timocy/babybot/.runtime/voice-fixtures/danger.wav",
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width": 2,
+      "duration_s": 1.820375,
+      "bytes": 58296,
+      "sha256": "e6155dca72dfc6146df9f0031109d634c05873cf850f5c255eb05ecbbea2f120"
+    }
+  ]
+}

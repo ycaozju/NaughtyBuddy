@@ -1,0 +1,26 @@
+{
+  "kind": "temporary-synthetic-clone-continuous-call-setup",
+  "timestamp": "2026-10-13T13:31:28.355420+08:00",
+  "synthetic_reference_only": true,
+  "speaker_similarity": "not_evaluated",
+  "reference_sha256": "94443d392e95c8cfdc92e9d073c8ea728dc8999236d41055838807fc602350ed",
+  "cleanup": {
+    "delete_status": 200,
+    "clone_absent": true,
+    "restore_status": 200,
+    "original_restored": true,
+    "api_logout_status": 200
+  },
+  "original_voice_id": "melo-default",
+  "clone_id": "custom-6042cd30ee0b10856753c746bd332571",
+  "prepare_select_ms": 16535.42,
+  "browser_exit_code": 0,
+  "browser_passed": true,
+  "call_behavior_passed": true,
+  "voice_packet_check": {
+    "packets": 7,
+    "all_match_expected": true
+  },
+  "browser_logout_status": 200,
+  "finished_at": "2026-10-13T13:32:46.465138+08:00"
+}

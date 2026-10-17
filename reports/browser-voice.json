@@ -1,0 +1,173 @@
+{
+  "timestamp": "2026-10-13T03:19:01.550Z",
+  "base": "http://127.0.0.1:8765",
+  "browser": "Chromium headless",
+  "microphone": "File-backed virtual microphone; synthetic adult Mandarin speech",
+  "tests": [
+    {
+      "name": "Desktop landing page renders without horizontal overflow",
+      "passed": true,
+      "elapsed_ms": 68
+    },
+    {
+      "name": "390px mobile view has no horizontal overflow and retains usable controls",
+      "passed": true,
+      "elapsed_ms": 77
+    },
+    {
+      "name": "Family login, parent unlock, fixed preferences, settings save and relock",
+      "passed": true,
+      "elapsed_ms": 408
+    },
+    {
+      "name": "First file-backed utterance interrupts greeting and traverses capture, VAD, real ASR, LLM, review and playback",
+      "passed": true,
+      "elapsed_ms": 15710,
+      "pcm_bytes": 115200,
+      "transcript": "我们一起讲一个小兔子的故事。",
+      "reply": "小兔子在草地上快乐地蹦跳，突然发现了一颗大蘑菇。它兴奋地跑过去，闻了闻，然后开始啃食。",
+      "source": "generated",
+      "event_timeline": {
+        "sent": [
+          {
+            "type": "start",
+            "time": 1237
+          },
+          {
+            "type": "interrupt",
+            "time": 2042.800000011921
+          },
+          {
+            "type": "pcm",
+            "time": 5370.900000035763,
+            "bytes": 115200
+          },
+          {
+            "type": "ping",
+            "time": 6238.100000023842
+          },
+          {
+            "type": "ping",
+            "time": 11238
+          },
+          {
+            "type": "ping",
+            "time": 16237.900000035763
+          },
+          {
+            "type": "played",
+            "time": 16806.100000023842,
+            "chunk_id": "eab9c6ff34047114"
+          }
+        ],
+        "received": [
+          {
+            "type": "session_started",
+            "time": 1237.5
+          },
+          {
+            "type": "state",
+            "time": 1238.1000000238419,
+            "turn_id": 0
+          },
+          {
+            "type": "greeting",
+            "time": 1266.199999988079,
+            "turn_id": 0,
+            "source": "fixed"
+          },
+          {
+            "type": "interrupted",
+            "time": 2043.300000011921,
+            "turn_id": 1
+          },
+          {
+            "type": "state",
+            "time": 2043.5,
+            "turn_id": 1
+          },
+          {
+            "type": "state",
+            "time": 5373.600000023842,
+            "turn_id": 2
+          },
+          {
+            "type": "transcript",
+            "time": 5439.699999988079,
+            "turn_id": 2
+          },
+          {
+            "type": "state",
+            "time": 5440.199999988079,
+            "turn_id": 2
+          },
+          {
+            "type": "pong",
+            "time": 6239.199999988079
+          },
+          {
+            "type": "state",
+            "time": 7404,
+            "turn_id": 2
+          },
+          {
+            "type": "state",
+            "time": 7557.5,
+            "turn_id": 2
+          },
+          {
+            "type": "audio",
+            "time": 8858,
+            "turn_id": 2,
+            "source": "generated"
+          },
+          {
+            "type": "pong",
+            "time": 11238.600000023842
+          },
+          {
+            "type": "pong",
+            "time": 16238.600000023842
+          },
+          {
+            "type": "state",
+            "time": 16806.69999998808,
+            "turn_id": 2
+          }
+        ],
+        "playback": [
+          {
+            "time": 1295.4000000357628,
+            "turn_id": 0,
+            "type": "greeting",
+            "source": "fixed",
+            "context_base_latency_s": 0.0106875
+          },
+          {
+            "time": 8923.600000023842,
+            "turn_id": 2,
+            "type": "audio",
+            "source": "generated",
+            "context_base_latency_s": 0.0106875
+          }
+        ]
+      },
+      "pcm_send_to_audio_start_ms": 3552.699999988079,
+      "timing_definition": "WebSocket binary PCM send to matching non-greeting AudioBufferSourceNode.start invocation; excludes VAD silence wait and speaker hardware latency",
+      "context_base_latency_s": 0.0106875
+    },
+    {
+      "name": "No JavaScript, console or Content Security Policy errors",
+      "passed": true,
+      "elapsed_ms": 0
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "csp_violations": [],
+  "limitations": [
+    "No physical Android device, real child voice, room acoustics or speaker echo cancellation was tested."
+  ],
+  "provider": "local",
+  "passed": true
+}

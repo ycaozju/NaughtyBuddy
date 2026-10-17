@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f4eb"><meta name="description" content="小芽是一个有时间边界的语音 AI 玩伴。由大人陪同，听故事、猜谜语，一起发现。">
+  <title>小芽 · 一起听，一起想</title><link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css"><script src="/static/voice-settings.js" type="module"></script><script src="/static/app.js" type="module"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="小芽首页"><span class="brand-icon" aria-hidden="true">✳</span><span>小芽<span class="brand-description">一起听，一起想</span></span></a>
+      <button id="parent-open" class="parent-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 10V7a4 4 0 0 1 8 0v3m-9 0h10a1 1 0 0 1 1 1v8H6v-8a1 1 0 0 1 1-1Z"/><path d="M12 14v2"/></svg>家长空间</button>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title"><div><p class="eyebrow"><span></span> 一小段，刚刚好的陪伴</p><h1 id="page-title">你好呀，<br class="mobile-br">今天想玩什么？</h1><p class="intro-copy">叫上大人，和小芽说说话。让好奇心发芽。</p></div><div class="session-pill"><span class="clock-icon" aria-hidden="true">◷</span><span id="time-label">每次 10 分钟</span></div></section>
+      <p id="cloud-note" class="notice" hidden>大人已启用云端文字服务，请和大人一起使用。</p>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <div class="play-layout">
+        <section class="companion-card" aria-label="语音玩伴">
+          <div class="companion-top"><span class="ai-badge">AI 玩伴</span><span id="mic-indicator" class="mic-indicator"><span></span>麦克风已关闭</span></div>
+          <div class="scene" id="scene" data-state="idle">
+            <span class="scene-spark spark-one" aria-hidden="true">✦</span><span class="scene-spark spark-two" aria-hidden="true">✦</span>
+            <svg class="companion" viewBox="0 0 400 320" role="img" aria-labelledby="companion-title"><title id="companion-title">小芽，一只戴着绿色围巾的小熊</title>
+              <defs><linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f5d7ad"/><stop offset="1" stop-color="#f8e9d0"/></linearGradient><linearGradient id="fur" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#99bdca"/><stop offset="1" stop-color="#719cad"/></linearGradient></defs>
+              <circle cx="200" cy="146" r="127" fill="url(#sky)"/>
+              <circle cx="294" cy="66" r="22" fill="#f6c664"/><path d="M75 197c19-33 40-38 65-6m140 1c19-27 44-22 56 7" fill="none" stroke="#e1cba9" stroke-width="4" stroke-linecap="round"/>
+              <path d="M50 256c62-23 243-25 304 0-78 30-228 25-304 0Z" fill="#e4d6bc" opacity=".65"/>
+              <g class="bear-body"><path d="M137 173c-22 21-30 64-20 82 6 12 24 11 38 1h94c14 10 30 8 35-1 9-19-1-61-20-82Z" fill="url(#fur)"/>
+              <path d="M156 207c6-23 24-34 45-34 24 0 42 14 45 39l-2 39h-88Z" fill="#d5e2e4"/>
+              <path d="M122 181c-20 5-37 31-28 44 6 8 20 2 32-16m149-28c20 3 34 23 31 35-3 14-21 12-34-6" fill="url(#fur)"/>
+              <circle cx="138" cy="83" r="31" fill="#83aaba"/><circle cx="261" cy="83" r="31" fill="#83aaba"/><circle cx="138" cy="84" r="17" fill="#c4d9de"/><circle cx="262" cy="84" r="17" fill="#c4d9de"/>
+              <path d="M116 116c0-46 39-64 84-64s85 21 85 65v24c0 41-42 63-85 63s-84-21-84-63Z" fill="url(#fur)"/>
+              <ellipse cx="201" cy="158" rx="45" ry="33" fill="#e8ecdf"/><ellipse cx="150" cy="151" rx="15" ry="8" fill="#d5a59b" opacity=".8"/><ellipse cx="251" cy="151" rx="15" ry="8" fill="#d5a59b" opacity=".8"/>
+              <g class="bear-eyes" fill="#345665"><ellipse cx="166" cy="127" rx="5" ry="7"/><ellipse cx="236" cy="127" rx="5" ry="7"/></g>
+              <path d="M192 149c0-8 18-8 18 0 0 5-9 9-9 9s-9-4-9-9Z" fill="#345665"/><path d="M188 165q13 15 26 0" fill="none" stroke="#345665" stroke-width="3" stroke-linecap="round"/>
+              <path d="M132 184q68 29 137-1l-9 25q-55 18-119-2Z" fill="#67855b"/><path d="m234 205 7 33 21-7-7-29" fill="#7b9768"/><path d="m244 223 12-3" stroke="#c5d1a9" stroke-width="3"/>
+              <path d="M127 256q14-10 30-3m86 0q15-7 29 2" stroke="#638d9e" stroke-width="4" stroke-linecap="round"/>
+              </g>
+              <g stroke="#67855b" stroke-width="3" fill="#8caa73"><path d="M69 255v-29"/><path d="M68 241c-18 1-22-12-21-16 15-3 22 5 21 16ZM69 234c-1-15 12-23 21-22 2 13-10 24-21 22Z"/><path d="M333 255v-18"/><path d="M333 245c-14 1-16-9-16-12 12-2 17 3 16 12Z"/></g>
+            </svg>
+            <div id="sound-waves" class="sound-waves" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="companion-copy"><h2 id="status-title">给小芽打个电话吧</h2><p id="status-detail">点一次拨打，接通后就能一直说话。</p></div>
+          <div id="call-status" class="call-status"><span class="call-dot" aria-hidden="true"></span><span id="call-state" role="status">尚未接通</span><span id="call-time" aria-label="通话时长">00:00</span></div>
+          <div class="primary-actions"><button id="start-button" class="button button-primary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a13 13 0 0 1-7-7l2-2-2-5Z"/></svg><span>拨打小芽</span></button><button id="mute-button" class="button button-mute" type="button" aria-pressed="false" disabled>静音</button><button id="stop-button" class="button button-stop" type="button" disabled><span class="stop-square" aria-hidden="true"></span>挂断</button></div>
+          <p id="call-hint" class="call-hint">接通后直接说话，不用每句按按钮；想插话时也可以直接说。</p>
+          <div class="voice-modes" role="group" aria-label="说话方式"><button id="continuous-mode" class="voice-mode active" type="button" aria-pressed="true">连续通话</button><button id="ptt-mode" class="voice-mode" type="button" aria-pressed="false">按住说话</button></div>
+          <div id="ptt-row" class="ptt-row" hidden><button id="ptt-button" class="ptt-button" type="button" disabled>按住说话</button><span id="ptt-hint">按住按钮，松开后发送</span></div>
+          <p class="identity-note">我是 AI，声音由 AI 合成，不代表声音本人正在说话。<br>有重要的事，请找信任的大人。</p>
+        </section>
+        <div class="right-column">
+          <section class="activities" aria-labelledby="activities-title"><div class="section-heading"><h2 id="activities-title">从这里开始</h2><span>选择一种玩法</span></div>
+            <div class="activity-grid" role="group" aria-label="选择玩法">
+              <button class="activity active" data-mode="story" aria-pressed="true" type="button"><span class="activity-icon story-icon" aria-hidden="true">✧</span><span><strong>一起编故事</strong><small>你的想象，我来接着说</small></span><span class="selected-check" aria-hidden="true">✓</span></button>
+              <button class="activity" data-mode="riddle" aria-pressed="false" type="button"><span class="activity-icon riddle-icon" aria-hidden="true">?</span><span><strong>猜个小谜语</strong><small>慢慢想，不着急</small></span><span class="selected-check" aria-hidden="true">✓</span></button>
+              <button class="activity compact" data-mode="chat" aria-pressed="false" type="button"><span class="activity-icon chat-icon" aria-hidden="true">☁</span><span><strong>说说今天</strong><small>分享一件小事</small></span><span class="selected-check" aria-hidden="true">✓</span></button>
+              <button class="activity compact" data-mode="curiosity" aria-pressed="false" type="button"><span class="activity-icon curiosity-icon" aria-hidden="true">✳</span><span><strong>好奇为什么</strong><small>一起发现世界</small></span><span class="selected-check" aria-hidden="true">✓</span></button>
+            </div>
+          </section>
+          <section class="conversation-card" aria-labelledby="conversation-title"><div class="section-heading"><h2 id="conversation-title">刚刚说了什么</h2><span class="conversation-mark" aria-hidden="true">···</span></div><div id="conversation" class="conversation" role="log" aria-live="polite" aria-relevant="additions"><div class="empty-conversation"><span aria-hidden="true">“</span><p>每个小想法，都可以成为故事的开始。</p><small>开始后，对话会出现在这里</small></div></div><details id="keyboard-details"><summary>用键盘说一句 <span aria-hidden="true">⌨</span></summary><form id="text-form" class="text-form"><label class="sr-only" for="text-input">想对小芽说的话</label><input id="text-input" maxlength="300" autocomplete="off" placeholder="比如：有一只会飞的小兔子…" disabled><button id="send-button" type="submit" disabled aria-label="发送">↑</button></form></details></section>
+        </div>
+      </div>
+      <footer class="page-footer"><span><span class="privacy-leaf" aria-hidden="true">❋</span> 不保存对话录音 · 随时可以停下来</span><span>玩一会儿，也去看看真实的世界。</span></footer>
+    </main>
+  </div>
+  <dialog id="parent-dialog" class="parent-dialog" aria-labelledby="parent-title"><div class="dialog-header"><div><p class="eyebrow">给陪伴孩子的大人</p><h2 id="parent-title">家长空间</h2></div><button id="parent-close" class="icon-button" aria-label="关闭家长空间" type="button">×</button></div><div class="dialog-body"><p id="parent-message" class="form-message" role="status"></p>
+    <section id="login-panel"><h3>连接我们的家庭</h3><p>输入大人设置的家庭口令后，就能开始。</p><form id="login-form"><label for="family-code">家庭口令</label><input id="family-code" type="password" autocomplete="current-password" required maxlength="128"><button class="button button-primary full-width" type="submit">进入小芽</button></form></section>
+    <section id="parent-unlock-panel" hidden><h3>由大人来设置</h3><p>调整使用时间和偏好，需要家长验证码。</p><form id="parent-unlock-form"><label for="parent-pin">家长验证码</label><input id="parent-pin" type="password" inputmode="numeric" autocomplete="off" required maxlength="128"><button class="button button-primary full-width" type="submit">解锁家长设置</button></form></section>
+    <section id="settings-panel" hidden><div class="parent-status"><span class="health-dot"></span><div><strong id="service-status">正在检查服务</strong><small id="model-status">当前设备提供语音服务</small></div></div><form id="settings-form"><h3>给时间留一点边界</h3><div class="form-columns"><div><label for="session-minutes">每次最多（分钟）</label><input id="session-minutes" type="number" min="1" max="30" value="10" required></div><div><label for="daily-minutes">每天最多（分钟）</label><input id="daily-minutes" type="number" min="1" max="120" value="30" required></div></div><div class="form-columns"><div><label for="allowed-start">可以开始的时刻</label><input id="allowed-start" type="number" min="0" max="23" value="7" required></div><div><label for="allowed-end">最晚结束的时刻</label><input id="allowed-end" type="number" min="1" max="24" value="21" required></div></div><p class="field-hint">按本地时间填写整点，例如 7 到 21 点。</p><label for="vad-silence">等孩子想一想</label><select id="vad-silence"><option value="1000">短暂停顿 · 1 秒</option><option value="1400" selected>自然停顿 · 1.4 秒</option><option value="2000">多等一会 · 2 秒</option><option value="2500">慢慢说 · 2.5 秒</option></select><p class="field-hint">孩子停顿这些时间后，小芽才开始回答。</p><label for="model-preset">语音服务</label><select id="model-preset" disabled><option value="local">本机运行 · 本地小模型</option></select><p class="field-hint">服务由大人在这台电脑上管理。</p><button class="button button-primary full-width" type="submit">保存时间设置</button></form><form id="memory-form" class="memory-form"><h3>只记住大人选好的偏好</h3><label class="toggle-row" for="memory-enabled"><span>记住喜欢的话题</span><input id="memory-enabled" type="checkbox"></label><fieldset class="preference-fieldset"><legend>选择话题偏好（最多 5 个）</legend><div id="memory-preferences" class="preference-options"></div></fieldset><p class="field-hint">只记住选中的话题。对话不会自动写入偏好。</p><div class="form-columns"><button class="button button-secondary" type="submit">保存偏好</button><button id="delete-memory" class="button button-secondary" type="button">清除偏好</button></div></form><div class="danger-zone"><button id="pause-button" class="button button-secondary full-width" type="button">让所有设备立即休息</button><button id="revoke-button" class="text-button" type="button">结束其他设备的会话</button></div></section>
+    <section id="voice-settings-panel" class="voice-settings-panel" hidden aria-labelledby="voice-settings-title">
+      <div class="voice-heading"><h3 id="voice-settings-title">给小芽选个声音</h3><span class="voice-local-tag">本机合成</span></div>
+      <p class="field-hint">可以换一种声音，或制作已获许可的自定义音色。所有声音仍由 AI 生成，不是声音本人在实时讲话。</p>
+      <p id="voice-message" class="form-message" role="status" aria-live="polite"></p>
+      <form id="voice-select-form">
+        <label for="voice-select">对话音色</label><select id="voice-select" disabled><option value="">正在读取音色…</option></select>
+        <p id="voice-description" class="field-hint"></p>
+        <div class="voice-button-row"><button id="voice-preview" class="button button-secondary" type="button" disabled>试听这段声音</button><button id="voice-preview-stop" class="text-button" type="button" disabled>停止试听</button></div>
+        <button id="voice-save" class="button button-primary full-width" type="submit" disabled>保存音色</button>
+        <p class="field-hint">首次准备可能需要一会儿。保存完成后，下次拨打时使用。</p>
+        <button id="voice-delete" class="text-button voice-delete" type="button" hidden disabled>删除这个自定义音色</button>
+        <p id="voice-delete-hint" class="field-hint" hidden>删除时会清除本机保存的参考录音和音色缓存，并结束正在使用它的通话。</p>
+      </form>
+      <details id="voice-clone-details" class="voice-clone-details"><summary>制作自己的音色 <span aria-hidden="true">＋</span></summary>
+        <p id="voice-clone-availability" class="field-hint">正在检查本机音色模型…</p>
+        <form id="voice-clone-form">
+          <label for="voice-name">音色名称</label><input id="voice-name" maxlength="24" autocomplete="off" placeholder="例如：温柔的故事声音" required>
+          <label for="voice-reference-text">参考录音的逐字稿</label><textarea id="voice-reference-text" rows="3" minlength="5" maxlength="200" placeholder="逐字填写录音里说的话，文字和录音需要一致。" required></textarea>
+          <p class="field-hint">在安静的地方自然朗读一段话，不要配乐。录音 3–20 秒，推荐 8–15 秒。</p>
+          <label class="voice-consent" for="voice-consent"><input id="voice-consent" type="checkbox" required><span>这是我本人的声音，或我已获得声音本人的明确许可，同意将参考录音保存在这台电脑用于合成 AI 声音。</span></label>
+          <div class="voice-recorder">
+            <div id="voice-record-status" class="voice-record-status" role="status"><span class="record-dot" aria-hidden="true"></span><span id="voice-record-label">未开始录音</span><span id="voice-record-time">00:00</span></div>
+            <div class="voice-button-row"><button id="voice-record-start" class="button button-secondary" type="button" disabled>开始录音</button><button id="voice-record-stop" class="button button-stop" type="button" disabled>停止录音</button><button id="voice-record-cancel" class="text-button" type="button" disabled>取消</button></div>
+            <label for="voice-file">也可以选择一段录音</label><input id="voice-file" type="file" accept="audio/*" disabled>
+            <p class="field-hint">支持此浏览器可解码的音频，文件不超过 10 MB。点击创建后才会提交到本机服务。</p>
+          </div>
+          <p id="voice-sample-status" class="field-hint">还没有参考录音。</p>
+          <div class="voice-button-row"><button id="voice-sample-preview" class="text-button" type="button" disabled>听一下参考录音</button><button id="voice-sample-clear" class="text-button" type="button" disabled>清除参考录音</button></div>
+          <button id="voice-create" class="button button-primary full-width" type="submit" disabled>创建自定义音色</button>
+          <p class="field-hint">创建后仍需选择并保存音色。关闭家长空间会停止录音和试听，并清除尚未提交的录音。</p>
+        </form>
+      </details>
+    </section>
+    <div id="logout-panel" class="logout-panel" hidden><button id="logout-button" class="text-button" type="button">退出这台设备</button></div><p class="field-hint">关闭家长空间时，会重新锁定设置。</p><p class="parent-footnote">请先由成人试用，再陪同孩子使用。小芽可能听错或答错，重要问题请由大人判断。</p>
+  </div></dialog>
+</body>
+</html>

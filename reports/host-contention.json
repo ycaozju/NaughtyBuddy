@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-10-13T11:08:02.958058+08:00",
+  "host_load": [
+    8.23388671875,
+    8.765625,
+    5.59423828125
+  ],
+  "cpu_count": 16,
+  "note": "Concurrent non-babybot CPU-heavy simulation/compiler jobs observed after a stress timeout. Correlation is not proof of the sole cause; no other jobs were stopped. Prior shell snapshot load was 10.20, 8.91, 5.03.",
+  "observed_other_busy_commands": [
+    "simv",
+    "vcs1fe"
+  ],
+  "mitigation": "Application LLM threads and batch threads reduced from 8 to 4; spin polling disabled; speech threads reduced from 4 to 2; output cap 96 tokens; model/turn/review timeouts 8/12/4 seconds."
+}

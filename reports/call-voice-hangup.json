@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-10-13T04:13:58.694081+00:00",
+  "kind": "real-local-model-voice-hangup",
+  "synthetic_speech_only": true,
+  "server_health": {
+    "status": "ok",
+    "provider": "local",
+    "backend": "local",
+    "version": "0.2.0"
+  },
+  "cases": [
+    {
+      "synthetic_utterance": "挂断。",
+      "ok": true,
+      "latency_ms": 90.97,
+      "transcript": "挂断。",
+      "ended": {
+        "type": "ended",
+        "reason": "voice_stop"
+      },
+      "events": [
+        {
+          "type": "state",
+          "state": "listening",
+          "turn_id": 0
+        },
+        {
+          "type": "greeting",
+          "turn_id": 0,
+          "chunk_id": "greeting",
+          "text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fixed"
+        },
+        {
+          "type": "state",
+          "state": "transcribing",
+          "turn_id": 1
+        },
+        {
+          "type": "transcript",
+          "text": "挂断。",
+          "turn_id": 1
+        },
+        {
+          "type": "ended",
+          "reason": "voice_stop"
+        }
+      ]
+    },
+    {
+      "synthetic_utterance": "结束通话。",
+      "ok": true,
+      "latency_ms": 59.84,
+      "transcript": "结束通话。",
+      "ended": {
+        "type": "ended",
+        "reason": "voice_stop"
+      },
+      "events": [
+        {
+          "type": "state",
+          "state": "listening",
+          "turn_id": 0
+        },
+        {
+          "type": "greeting",
+          "turn_id": 0,
+          "chunk_id": "greeting",
+          "text": "我是小芽，一个AI玩伴。想停下来的时候，按挂断就可以啦。",
+          "mime": "audio/wav",
+          "safety": "approved",
+          "source": "fixed"
+        },
+        {
+          "type": "state",
+          "state": "transcribing",
+          "turn_id": 1
+        },
+        {
+          "type": "transcript",
+          "text": "结束通话。",
+          "turn_id": 1
+        },
+        {
+          "type": "ended",
+          "reason": "voice_stop"
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "limitations": "Uploads synthetic PCM over WebSocket; browser VAD and physical microphone are covered separately, not asserted here."
+}
